@@ -4,7 +4,10 @@
   <div *ngIf="!(loading$ | async)">
     <section *ngFor="let character of characters$ | async">
       <h2>{{ character.name }}</h2>
-      <p>From {{ character.films }}</p>
+      <p>You can see them in:</p>
+      <p>
+        {{ character.films }}
+      </p>
     </section>
   </div>
 </section>
