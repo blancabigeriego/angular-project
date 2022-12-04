@@ -8,11 +8,13 @@ import { HomePageComponentComponent } from './components/home-page-component/hom
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ROOT_REDUCERS } from './state/app.state';
+import { LandingComponent } from './components/landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponentComponent
+    HomePageComponentComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

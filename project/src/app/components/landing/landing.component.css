@@ -1,0 +1,40 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header img{
+    width: 10%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container img{
+    width: 50%;
+    border-radius: 10px;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    gap: 30px;
+
+}
+
+.text-container p{
+
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.text-container button{
+    padding: 20px;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    background-color: aquamarine;
+
+}
