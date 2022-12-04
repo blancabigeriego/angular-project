@@ -1,5 +1,10 @@
 <h1>Our heroes and villans:</h1>
 <section>
   <div *ngIf="loading$ | async">Even miracles take a little time!</div>
-  <div *ngIf="!(loading$ | async)"></div>
+  <div *ngIf="!(loading$ | async)">
+    <section *ngFor="let character of characters$ | async">
+      <h2>{{ character.name }}</h2>
+      <p>From {{ character.films }}</p>
+    </section>
+  </div>
 </section>

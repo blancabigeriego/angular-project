@@ -17,19 +17,19 @@ export class HomePageComponentComponent implements OnInit {
  
 
   loading$: Observable<boolean>;
-  apartments$: Observable<Character[]>;
+  characters$: Observable<Character[]>;
 
   constructor( private store: Store<AppState>,
     private GetDataService: GetDataService
     ){
     this.loading$ = new Observable<boolean>();
-    this.apartments$ = new Observable<Character[]>();
+    this.characters$ = new Observable<Character[]>();
   }
 
   ngOnInit(): void{
 
     this.loading$ = this.store.select(state => state.charactersState.loading);
-    this.apartments$ = this.store.select(state =>
+    this.characters$ = this.store.select(state =>
      state.charactersState.characters )
 
     this.store.dispatch(loadingCharacters());
