@@ -12,6 +12,6 @@ export class GetDataService {
   constructor(private http: HttpClient) { }
 
   getCharacters(): Observable<Character[]> {
-    return this.http.get<Character[]>(`${this.BASE_URL}/character`).pipe(delay(1500));
+    return this.http.get<Character[]>(`${this.BASE_URL}`).pipe(delay(1500));
   }
 }
