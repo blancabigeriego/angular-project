@@ -20,6 +20,7 @@ export class PlaypageComponent implements OnInit {
   createForm: FormGroup;
   nameInput: FormControl;
   filmsInput: FormControl;
+  shortFilmsInput: FormControl;
   tvShowsInput: FormControl;
   videoGamesInput: FormControl;
   parkAttractionsInput: FormControl;
@@ -35,7 +36,8 @@ export class PlaypageComponent implements OnInit {
     this.createCharacterSuccess$ = new Observable();
     this.nameInput = new FormControl('', [Validators.required]);
     this.filmsInput = new FormControl('',[Validators.required]);
-    this.tvShowsInput = new FormControl('', [Validators.required]);
+    this.shortFilmsInput = new FormControl('');
+    this.tvShowsInput = new FormControl('');
     this.videoGamesInput = new FormControl('', [Validators.required]);
     this.parkAttractionsInput = new FormControl('', [Validators.required]);
     this.alliesInput = new FormControl('', [Validators.required]);
