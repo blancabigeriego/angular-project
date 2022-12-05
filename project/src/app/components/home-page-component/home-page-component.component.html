@@ -1,1 +1,10 @@
-<p>home-page-component works!</p>
+<h1>Our heroes and villans:</h1>
+<section>
+  <div *ngIf="loading$ | async">Even miracles take a little time!</div>
+  <div *ngIf="!(loading$ | async)">
+    <section *ngFor="let character of characters$ | async">
+      <a>{{ character.name }}</a>
+      <img src="{{ character.imageUrl }}" />
+    </section>
+  </div>
+</section>
