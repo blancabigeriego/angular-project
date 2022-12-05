@@ -71,7 +71,7 @@
       "enemies": [],
       "_id": 24,
       "name": "Absolem",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/4d/Caterpillar.jpg",
+      "imageUrl":"https://i.scdn.co/image/ab67616d0000b273c2706081187ea0f7c1c64aee",
       "url": "https://api.disneyapi.dev/characters/24"
     },
     {
@@ -377,28 +377,7 @@
      "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg",
 "url": "https://api.disneyapi.dev/characters/308"
  },
-{
-  "films": [
-    "Alice in Wonderland (2010 film)",
-    "Alice Through the Looking Glass"
-  ],
-  "shortFilms": [],
-  "tvShows": [],
-  "videoGames": [
-    
-    "Alice in Wonderland (2010 video game)",
-    
-    "Disney Universe",
-    
-    "Disney Crossy Road"
-  ], 
-"parkAttractions": [],
-"allies": [], "enemies": [],
-"_id": 24,
-"name": "Absolem",
-"imageUrl": "https://static.wikia.nocookie.netimages/4/4d/Caterpillar.jpg",
-"url": "https://api.disneyapi.dev/characters/24"
-  },
+
   {
      "films": [
      "Aladdin (film)",
@@ -485,7 +464,7 @@
   "enemies": [ ],
   "_id": 193,
   "name": "Alonzo",
-  "imageUrl": "https://static.wikia.nocookie.images/8/82/102dalmatiansalonzo.JPG",
+  "imageUrl":"https://albaniandubs.weebly.com/uploads/5/7/8/2/57825701/alonzo-101-dalmatians-1996_orig.png",
    "url": "https://api.disneyapi.dev/characters/193"
    },
 {
@@ -5603,7 +5582,7 @@
     "enemies": [ ],
     "_id": 7473,
     "name": "Zazu",
-    "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/95/Profile_-_Zazu.jpeg",
+    "imageUrl":"https://static.wikia.nocookie.net/disney/images/9/95/Profile_-_Zazu.jpeg",
     "url": "https://api.disneyapi.dev/characters/7473"
     }
 ]

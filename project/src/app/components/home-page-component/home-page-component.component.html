@@ -3,11 +3,8 @@
   <div *ngIf="loading$ | async">Even miracles take a little time!</div>
   <div *ngIf="!(loading$ | async)">
     <section *ngFor="let character of characters$ | async">
-      <h2>{{ character.name }}</h2>
-      <p>You can see them in:</p>
-      <p>
-        {{ character.films }}
-      </p>
+      <a>{{ character.name }}</a>
+      <img src="{{ character.imageUrl }}" />
     </section>
   </div>
 </section>
