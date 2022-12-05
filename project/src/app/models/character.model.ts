@@ -6,7 +6,7 @@ export interface Character {
     parkAttractions: string[],
     allies: string[],
     enemies: string[],
-    _id: number,
+    id: number,
     name: string,
     imageUrl: string,
     url: string

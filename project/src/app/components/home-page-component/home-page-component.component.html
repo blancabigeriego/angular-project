@@ -3,8 +3,10 @@
   <div *ngIf="loading$ | async">Even miracles take a little time!</div>
   <div *ngIf="!(loading$ | async)">
     <section *ngFor="let character of characters$ | async">
-      <a>{{ character.name }}</a>
-      <img src="{{ character.imageUrl }}" />
+      <a [routerLink]="['/characters', character.id]">
+        <h2>{{ character.name }}</h2>
+        <img src="{{ character.imageUrl }}" alt="{{ character.name }}" />
+      </a>
     </section>
   </div>
 </section>

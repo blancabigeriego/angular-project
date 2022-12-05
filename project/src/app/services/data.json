@@ -1,6 +1,6 @@
 
 {
-  "data": [
+  "films": [
     {
       "films": [
         "The Computer Wore Tennis Shoes",
@@ -13,7 +13,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 14,
+      "id": 14,
       "name": "A.J. Arno",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2c/A.J._Arno.jpg",
       "url": "https://api.disneyapi.dev/characters/14"
@@ -29,7 +29,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 16,
+      "id": 16,
       "name": "Abdullah",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cb/1087603-44532-clp-950.jpg",
       "url": "https://api.disneyapi.dev/characters/16"
@@ -47,7 +47,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 21,
+      "id": 21,
       "name": "Abis Mal's Thugs",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/ba/Abis_Mal%27s_Thugs.jpg",
       "url": "https://api.disneyapi.dev/characters/21"
@@ -69,7 +69,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 24,
+      "id": 24,
       "name": "Absolem",
       "imageUrl":"https://i.scdn.co/image/ab67616d0000b273c2706081187ea0f7c1c64aee",
       "url": "https://api.disneyapi.dev/characters/24"
@@ -114,7 +114,7 @@
       ],
       "allies": [],
       "enemies": [],
-      "_id": 25,
+      "id": 25,
       "name": "Abu",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3f/Profile_-_Abu.png",
       "url": "https://api.disneyapi.dev/characters/25"
@@ -132,7 +132,7 @@
     "parkAttractions": [],
     "allies": [],
     "enemies": [],
-    "_id": 30,
+    "id": 30,
     "name": "Ace",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1e/Profile_-_Ace.png",
     "url": "https://api.disneyapi.dev/characters/30"
@@ -148,7 +148,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 31,
+      "id": 31,
       "name": "Achilles",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/8f/Achilles_HOND.jpg",
       "url": "https://api.disneyapi.dev/characters/31"
@@ -168,7 +168,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 33,
+      "id": 33,
       "name": "Prince Achmed",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Aladdin-disneyscreencaps.com-1123.jpg",
       "url": "https://api.disneyapi.dev/characters/33"
@@ -183,7 +183,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 34,
+      "id": 34,
       "name": "Aconcagua",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/32/Saludos-Amigos-classic-disney-18407142-800-600.jpg",
       "url": "https://api.disneyapi.dev/characters/34"
@@ -204,7 +204,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 40,
+      "id": 40,
       "name": "Amber Addison",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/52/250px-Amber.jpg",
       "url": "https://api.disneyapi.dev/characters/40"
@@ -219,7 +219,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 41,
+      "id": 41,
       "name": "Claire Addison",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/79/Claireaddison.jpeg",
       "url": "https://api.disneyapi.dev/characters/41"
@@ -234,7 +234,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 42,
+      "id": 42,
       "name": "Adelbert",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/21/Adelbert.jpg",
       "url": "https://api.disneyapi.dev/characters/42"
@@ -252,7 +252,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 45,
+      "id": 45,
       "name": "Admiral Boom and Mr. Binnacle",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/be/Marypoppins-disneyscreencaps_com-1086.jpg",
       "url": "https://api.disneyapi.dev/characters/45"
@@ -272,7 +272,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 112,
+      "id": 112,
       "name": "Achilles",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/d3/Vlcsnap-2015-05-06-23h04m15s601.png",
       "url": "https://api.disneyapi.dev/characters/112"
@@ -291,7 +291,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 119,
+      "id": 119,
       "name": "Addison",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e5/Addison%25_27s_More_Than_Cheer_%25_3F_Teaser_ZOMBIES_2_Disney_Channel.jpg",
       "url": "https://api.disneyapi.dev/characters/119"
@@ -306,7 +306,7 @@
       "parkAttractions": [],
       "allies": [],
       "enemies": [],
-      "_id": 130,
+      "id": 130,
       "name": "Aerosol",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/92/Screenshot_2016-09-08_at_10.18.27_PM.png",
       "url": "https://api.disneyapi.dev/characters/130"
@@ -329,7 +329,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 138,
+  "id": 138,
   "name": "King Agnarr",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/63/Profile_-_King_Agnarr_Frozen_2.jpg",
   " url": "https://api.disneyapi.dev/characters/138"
@@ -353,14 +353,14 @@
   "parkAttractions": [],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 140,
+  "id": 140,
   "name": "Air Bud",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3c/Buddy_%28Air_Bud%29.png",
   "url": "https://api.disneyapi.dev/characters/140"
   },
 
 {
-     "_id": 308,
+     "id": 308,
      "films": ["Tangled", "Tangled: Before Ever After"],
      "shortFilms": ["Tangled Ever After", "Hare Peace"],
     "tvShows": ["Once Upon a Time", "Tangled: The Series"],
@@ -444,7 +444,7 @@
   "Wishes",
   "Remember... Dreams Come True"
   ],
-  "_id": 156,
+  "id": 156,
   "allies": [ ],
   "name": "Aladdin",
   "enemies": [ ],
@@ -462,7 +462,7 @@
   "parkAttractions": [ ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 193,
+  "id": 193,
   "name": "Alonzo",
   "imageUrl":"https://albaniandubs.weebly.com/uploads/5/7/8/2/57825701/alonzo-101-dalmatians-1996_orig.png",
    "url": "https://api.disneyapi.dev/characters/193"
@@ -475,7 +475,7 @@
 "parkAttractions": [ ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 213,
+"id": 213,
 "name": "Ammand the Corsair",
   "url": "https://api.disneyapi.dev/characters/213"
 },
@@ -513,7 +513,7 @@
 "parkAttractions": [ ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 219,
+"id": 219,
 "name": "Anamaria",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/31/Anamaria.gif",
 "url": "https://api.disneyapi.dev/characters/219"
@@ -545,7 +545,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 242,
+"id": 242,
 "name": "Angel",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/d0/Profile_-_Angel.png",
 "url": "https://api.disneyapi.dev/characters/242"
@@ -563,7 +563,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 250,
+"id": 250,
 "name": "Angelique",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/99/Beauty-beast-christmas-disneyscreencaps.com-6433.jpg",
 "url": "https://api.disneyapi.dev/characters/250"
@@ -626,7 +626,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 256,
+"id": 256,
 "name": "Anna",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0f/Profile_-_Anna.jpeg",
 "url": "https://api.disneyapi.dev/characters/256"
@@ -643,7 +643,7 @@
   "parkAttractions": [ ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 262,
+  "id": 262,
   "name": "Annette, Collette, and Danielle",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/f7/Annette_colette_danielle.png",
   "url": "https://api.disneyapi.dev/characters/262"
@@ -726,7 +726,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 309,
+"id": 309,
 "name": "Ariel",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/8a/Profile_-_Ariel.jpg",
 "url": "https://api.disneyapi.dev/characters/309"
@@ -784,7 +784,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 373,
+"id": 373,
 "name": "Aurora",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2a/Profile_-_Aurora.jpeg",
 "url": "https://api.disneyapi.dev/characters/373"
@@ -838,7 +838,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 423,
+"id": 423,
 "name": "Big Bad Wolf",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/73/The_Big_Bad_Wolf.png",
 "url": "https://api.disneyapi.dev/characters/423"
@@ -869,7 +869,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 428,
+"id": 428,
 "name": "Bagheera",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/5c/Profile_-_Bagheera.jpeg",
 "url": "https://api.disneyapi.dev/characters/428"
@@ -930,7 +930,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 450,
+"id": 450,
 "name": "Baloo",
  "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/31/Profile_-_Baloo.jpeg",
 "url": "https://api.disneyapi.dev/characters/450"
@@ -991,7 +991,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 450,
+"id": 450,
 "name": "Baloo",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/31/Profile_-_Baloo.jpeg",
 "url": "https://api.disneyapi.dev/characters/450"
@@ -1034,7 +1034,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 455,
+"id": 455,
 "name": "Bambi",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/ce/Profile_-_Bambi.png",
 "url": "https://api.disneyapi.dev/characters/455"
@@ -1061,7 +1061,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 456,
+"id": 456,
 "name": "Bambi's mother",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/fd/Bambi%27s_mother.jpg",
 "url": "https://api.disneyapi.dev/characters/456"
@@ -1115,7 +1115,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 507,
+"id": 507,
 "name": "Bashful",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/52/Profile_-_Bashful.png",
 "url": "https://api.disneyapi.dev/characters/507"
@@ -1154,7 +1154,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 480,
+  "id": 480,
   "name": "Hector Barbossa",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e2/Barbossa_thinks.jpg",
   "url": "https://api.disneyapi.dev/characters/480"
@@ -1219,7 +1219,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 544,
+    "id": 544,
     "name": "Beast",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/84/Profile_-_Beast.jpeg",
     "url": "https://api.disneyapi.dev/characters/544"
@@ -1299,7 +1299,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 571,
+      "id": 571,
       "name": "Belle",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1b/Profile_-_Belle.jpeg",
       "url": "https://api.disneyapi.dev/characters/571"
@@ -1330,7 +1330,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 894,
+"id": 894,
 "name": "Bruno",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/d0/Bruno_%28Cinderella%29.jpg",
 "url": "https://api.disneyapi.dev/characters/894"
@@ -1400,7 +1400,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 1044,
+  "id": 1044,
   "name": "Captain Hook",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0b/Profile_-_Captain_Hook.jpeg",
   "url": "https://api.disneyapi.dev/characters/1044"
@@ -1450,7 +1450,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 1182,
+    "id": 1182,
     "name": "Prince Charming",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/ec/Profile_-_Prince_Charming.png",
     "url": "https://api.disneyapi.dev/characters/1182"
@@ -1496,7 +1496,7 @@
       ],
      "allies": [ ],
       "enemies": [ ],
-      "_id": 1214,
+      "id": 1214,
       "name": "Cheshire Cat",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/8e/DisneyCheshireCat.jpg",
      "url": "https://api.disneyapi.dev/characters/1214"
@@ -1585,7 +1585,7 @@
         ],
         "allies": [ ],
         "enemies": [ ],
-        "_id": 1285,
+        "id": 1285,
         "name": "Cinderella",
         "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e5/Profile_-_Cinderella.jpeg",
         "url": "https://api.disneyapi.dev/characters/1285"
@@ -1632,7 +1632,7 @@
           ],
           "allies": [ ],
           "enemies": [ ],
-          "_id": 1387,
+          "id": 1387,
           "name": "Cogsworth",
           "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/bd/Profile_-_Cogsworth.png",
           "url": "https://api.disneyapi.dev/characters/1387"
@@ -1680,7 +1680,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 1525,
+"id": 1525,
 "name": "Jiminy Cricket",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/f0/Profile_-_Jiminy_Cricket.jpeg",
 "url": "https://api.disneyapi.dev/characters/1525"
@@ -1724,7 +1724,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 1641,
+  "id": 1641,
   "name": "Wendy Darling",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/53/Profile_-_Wendy_Darling.jpeg",
   "url": "https://api.disneyapi.dev/characters/1641"
@@ -1777,7 +1777,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 1681,
+    "id": 1681,
     "name": "Cruella De Vil",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/92/Profile_-_Cruella.png",
     "url": "https://api.disneyapi.dev/characters/1681"
@@ -1831,7 +1831,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 1820,
+      "id": 1820,
       "name": "Doc",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/17/Profile_-_Doc.png",
       "url": "https://api.disneyapi.dev/characters/1820"
@@ -1905,7 +1905,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 1944,
+"id": 1944,
 "name": "Daisy Duck",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/67/Daisy_Duck_transparent.png",
 "url": "https://api.disneyapi.dev/characters/1944"
@@ -2005,7 +2005,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 1947,
+  "id": 1947,
   "name": "Donald Duck",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/db/Donald_Duck_Iconic.png",
   "url": "https://api.disneyapi.dev/characters/1947"
@@ -2073,7 +2073,7 @@
     ],
    "allies": [ ],
     "enemies": [ ],
-    "_id": 2099,
+    "id": 2099,
     "name": "Elsa",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/95/Profile_-_Elsa.jpeg",
     "url": "https://api.disneyapi.dev/characters/2099"
@@ -2129,7 +2129,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 2183,
+      "id": 2183,
       "name": "Fa Mulan",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/04/Profile_-_Mulan.jpeg",
       "url": "https://api.disneyapi.dev/characters/2183"
@@ -2179,7 +2179,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 2382,
+"id": 2382,
 "name": "Flounder",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/60/Profile_-_Flounder.jpeg",
 "url": "https://api.disneyapi.dev/characters/2382" 
@@ -2211,7 +2211,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 2498,
+  "id": 2498,
   "name": "Claude Frollo",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/64/Judge_Frollo.jpg",
   "url": "https://api.disneyapi.dev/characters/2498"
@@ -2287,7 +2287,7 @@
     ],
     "allies": [ ],
    "enemies": [ ],
-    "_id": 2607,
+    "id": 2607,
     "name": "Genie",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/92/Profile_-_Genie.jpeg",
     "url": "https://api.disneyapi.dev/characters/2607"
@@ -2379,7 +2379,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 2755,
+      "id": 2755,
       "name": "Goofy",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/27/Goofy_transparent.png",
       "url": "https://api.disneyapi.dev/characters/2755"
@@ -2440,7 +2440,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 2891,
+"id": 2891,
 "name": "Grumpy",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/ef/Profile_-_Grumpy.png",
 "url": "https://api.disneyapi.dev/characters/2891"
@@ -2481,7 +2481,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 3082,
+  "id": 3082,
   "name": "Hercules",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/70/Profile_-_Hercules.jpeg",
   "url": "https://api.disneyapi.dev/characters/3082"
@@ -2527,7 +2527,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 3237,
+    "id": 3237,
     "name": "Iago",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/69/Profile_-_Iago.jpeg",
     "url": "https://api.disneyapi.dev/characters/3237"
@@ -2590,7 +2590,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 3347,
+    "id": 3347,
     "name": "Jafar",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/60/Profile_-_Jafar.jpeg",
     "url": "https://api.disneyapi.dev/characters/3347"
@@ -2663,7 +2663,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 3389,
+      "id": 3389,
       "name": "Jasmine",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cd/Profile_-_Jasmine.jpeg",
       "url": "https://api.disneyapi.dev/characters/3389"
@@ -2696,7 +2696,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 3504,
+"id": 3504,
 "name": "Davy Jones",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/02/Davy_Jones_-_Dead_Man%27s_Chest.jpg",
 "url": "https://api.disneyapi.dev/characters/3504"
@@ -2735,7 +2735,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 3650,
+  "id": 3650,
   "name": "Shere Khan",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/93/Profile_-_Shere_Khan.jpeg",
   "url": "https://api.disneyapi.dev/characters/3650"
@@ -2776,7 +2776,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 3771,
+    "id": 3771,
     "name": "Kristoff",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b4/Profile_-_Kristoff.jpeg",
     "url": "https://api.disneyapi.dev/characters/3771"
@@ -2815,7 +2815,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 3799,
+      "id": 3799,
       "name": "Lady",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/06/Profile_-_Lady.jpeg",
       "url": "https://api.disneyapi.dev/characters/3799"
@@ -2867,7 +2867,7 @@
         ],
         "allies": [ ],
         "enemies": [ ],
-        "_id": 4031,
+        "id": 4031,
         "name": "King Louie",
         "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b2/Profile_-_King_Louie.jpeg",
         "url": "https://api.disneyapi.dev/characters/4031"
@@ -2924,7 +2924,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 4080,
+"id": 4080,
 "name": "Lumiere",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/f5/Profile_-_Lumiere.jpeg",
 "url": "https://api.disneyapi.dev/characters/4080"
@@ -2977,7 +2977,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 4117,
+  "id": 4117,
   "name": "The Mad Hatter",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/19/Profile_-_Mad_Hatter.jpeg",
   "url": "https://api.disneyapi.dev/characters/4117"
@@ -3034,7 +3034,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 4143,
+    "id": 4143,
     "name": "Magic Carpet",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/f4/Magic_Carpet_Promo.jpg",
     "url": "https://api.disneyapi.dev/characters/4143"
@@ -3098,7 +3098,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 4180,
+      "id": 4180,
       "name": "Maleficent",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/05/Profile_-_Maleficent.jpeg",
       "url": "https://api.disneyapi.dev/characters/4180"
@@ -3167,7 +3167,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 4389,
+"id": 4389,
 "name": "Scrooge McDuck",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0a/Scrooge_McDuck.jpeg",
 "url": "https://api.disneyapi.dev/characters/4389"
@@ -3202,7 +3202,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 4458,
+  "id": 4458,
   "name": "Megara",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/91/Profile_-_Megara.jpeg",
   "url": "https://api.disneyapi.dev/characters/4458"
@@ -3238,7 +3238,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 4484,
+    "id": 4484,
     "name": "Merlin",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/ee/Merlin_Sword_in_the_Stone.jpeg",
     "url": "https://api.disneyapi.dev/characters/4484"
@@ -3277,7 +3277,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 4591,
+      "id": 4591,
       "name": "Moana",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/7d/Profile_-_Moana.png",
       "url": "https://api.disneyapi.dev/characters/4591"
@@ -3385,7 +3385,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 4703,
+"id": 4703,
 "name": "Mickey Mouse",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/99/Mickey_Mouse_Disney_3.jpeg",
 "url": "https://api.disneyapi.dev/characters/4703"
@@ -3468,7 +3468,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 4704,
+  "id": 4704,
   "name": "Minnie Mouse",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/36/Minnie_Mouse_pose_.jpg",
   "url": "https://api.disneyapi.dev/characters/4704"
@@ -3508,7 +3508,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 4710,
+    "id": 4710,
     "name": "Mowgli",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3a/Profile_-_Mowgli.jpeg",
     "url": "https://api.disneyapi.dev/characters/4710"
@@ -3548,7 +3548,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 4746,
+      "id": 4746,
       "name": "Mufasa",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/5e/Mufasa_Lion_King_.jpg",
       "url": "https://api.disneyapi.dev/characters/4746"
@@ -3591,7 +3591,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 4789,
+"id": 4789,
 "name": "Nala",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/55/Profile_-_Nala.jpeg",
 "url": "https://api.disneyapi.dev/characters/4789"
@@ -3652,7 +3652,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 4994,
+  "id": 4994,
   "name": "Olaf",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/53/Profile_-_Olaf.jpeg",
   "url": "https://api.disneyapi.dev/characters/4994"
@@ -3714,7 +3714,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 5117,
+    "id": 5117,
     "name": "Peter Pan",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/5e/Profile_-_Peter_Pan.jpeg",
     "url": "https://api.disneyapi.dev/characters/5117"
@@ -3741,7 +3741,7 @@
       "parkAttractions": [ ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 5151,
+      "id": 5151,
       "name": "Patch",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/79/Profile_-_Patch.png",
       "url": "https://api.disneyapi.dev/characters/5151"
@@ -3768,7 +3768,7 @@
 "parkAttractions": [ ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 5191,
+"id": 5191,
 "name": "Pegasus",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/5c/Pegasus_Hercules.jpg",
 "url": "https://api.disneyapi.dev/characters/5191"
@@ -3819,7 +3819,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 5195,
+  "id": 5195,
   "name": "Lilo Pelekai",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1f/Profile_-_Lilo.png",
   "url": "https://api.disneyapi.dev/characters/5195"
@@ -3851,7 +3851,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 5234,
+    "id": 5234,
     "name": "Perdita",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e2/Profile_-_Perdita.png",
     "url": "https://api.disneyapi.dev/characters/5234"
@@ -3916,7 +3916,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 5325,
+      "id": 5325,
       "name": "Pinocchio",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/9b/Profile_-_Pinocchio.jpeg",
       "url": "https://api.disneyapi.dev/characters/5325"
@@ -3992,7 +3992,7 @@
 ],
 "allies": [ ],
  "enemies": [ ],
-"_id": 5371,
+"id": 5371,
 "name": "Pluto",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/7b/Pluto.PNG",
 "url": "https://api.disneyapi.dev/characters/5371"
@@ -4036,7 +4036,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 5379,
+  "id": 5379,
   "name": "Pocahontas",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/7b/Profile_-_Pocahontas.jpeg",
   "url": "https://api.disneyapi.dev/characters/5379"
@@ -4077,7 +4077,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 5393,
+    "id": 5393,
     "name": "Pongo",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3c/Profile_-_Pongo.png",
     "url": "https://api.disneyapi.dev/characters/5393"
@@ -4113,7 +4113,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 5403,
+      "id": 5403,
       "name": "Mary Poppins",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/5c/Mary_Poppins_-_Julie_Andrews.jpg",
       "url": "https://api.disneyapi.dev/characters/5403"
@@ -4152,7 +4152,7 @@
         "parkAttractions": [ ],
         "allies": [ ],
         "enemies": [ ],
-        "_id": 5428,
+        "id": 5428,
         "name": "Chip Potts",
         "imageUrl": "https://static.wikia.nocookie.net/disney/images/a/ac/Profile_-_Chip.png",
         "url": "https://api.disneyapi.dev/characters/5428"
@@ -4198,7 +4198,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 5429,
+"id": 5429,
 "name": "Mrs. Potts",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Profile_-_Mrs._Potts.jpeg",
 "url": "https://api.disneyapi.dev/characters/5429"
@@ -4256,7 +4256,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 5516,
+  "id": 5516,
   "name": "Pumbaa",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e6/Profile_-_Pumbaa.jpeg",
   "url": "https://api.disneyapi.dev/characters/5516"
@@ -4288,7 +4288,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 5535,
+    "id": 5535,
     "name": "Quasimodo",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/7f/Quasimodo.jpeg",
     "url": "https://api.disneyapi.dev/characters/5535"
@@ -4335,7 +4335,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 5542,
+"id": 5542,
 "name": "Queen of Hearts",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/61/Profile_-_Queen_of_Hearts.jpeg",
 "url": "https://api.disneyapi.dev/characters/5542"
@@ -4383,7 +4383,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 5582,
+  "id": 5582,
   "name": "Rafiki",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/32/Profile_-_Rafiki.jpeg",
   "url": "https://api.disneyapi.dev/characters/5582"
@@ -4416,7 +4416,7 @@
     "parkAttractions": [ ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 5587,
+    "id": 5587,
     "name": "Rajah",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/02/Profile_-_Rajah.jpeg",
     "url": "https://api.disneyapi.dev/characters/5587"
@@ -4444,7 +4444,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 5619,
+      "id": 5619,
       "name": "Governor Ratcliffe",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/79/Profile_-_Governor_Ratcliffe.png",
       "url": "https://api.disneyapi.dev/characters/5619"
@@ -4472,7 +4472,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 5739,
+"id": 5739,
 "name": "Robin Hood",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/42/Robin_Hood_Disney.jpg",
 "url": "https://api.disneyapi.dev/characters/5739"
@@ -4496,7 +4496,7 @@
   "parkAttractions": [ ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 5963,
+  "id": 5963,
   "name": "Sarabi",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2f/Sarabi.jpg",
   "url": "https://api.disneyapi.dev/characters/5963"
@@ -4547,7 +4547,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 5986,
+    "id": 5986,
     "name": "Scar",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/66/Profile_-_Scar.jpeg",
     "url": "https://api.disneyapi.dev/characters/5986"
@@ -4606,7 +4606,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 6030,
+      "id": 6030,
       "name": "Sebastian",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/ca/Profile_-_Sebastian.jpeg",
       "url": "https://api.disneyapi.dev/characters/6030"
@@ -4641,7 +4641,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 6108,
+"id": 6108,
 "name": "Shenzi, Banzai, and Ed",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b3/Lionking-disneyscreencaps.com-2439.jpg",
 "url": "https://api.disneyapi.dev/characters/6108"
@@ -4705,7 +4705,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 6160,
+  "id": 6160,
   "name": "Simba",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/37/Profile_-_Simba.jpeg",
   "url": "https://api.disneyapi.dev/characters/6160"
@@ -4780,7 +4780,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 6279,
+    "id": 6279,
     "name": "Snow White",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/33/Profile_-_Snow_White.jpeg",
     "url": "https://api.disneyapi.dev/characters/6279"
@@ -4831,7 +4831,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 6322,
+      "id": 6322,
       "name": "Jack Sparrow",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/28/Profile_-_Jack_Sparrow.png",
       "url": "https://api.disneyapi.dev/characters/6322"
@@ -4909,7 +4909,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 6448,
+"id": 6448,
 "name": "Stitch",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/a/a8/Profile_-_Stitch.jpeg",
 "url": "https://api.disneyapi.dev/characters/6448"
@@ -4944,7 +4944,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 6492,
+  "id": 6492,
   "name": "Sultan",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/31/Profile_-_The_Sultan.jpeg",
   "url": "https://api.disneyapi.dev/characters/6492"
@@ -4989,7 +4989,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 6525,
+    "id": 6525,
     "name": "Sven",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0b/Profile_-_Sven.jpeg",
     "url": "https://api.disneyapi.dev/characters/6525"
@@ -5017,7 +5017,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 6533,
+"id": 6533,
 "name": "Elizabeth Swann",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3d/DMTNT_Elizabeth_Swann_cropped.png",
 "url": "https://api.disneyapi.dev/characters/6533"
@@ -5052,7 +5052,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 6610,
+  "id": 6610,
   "name": "Tarzan",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2e/Profile_-_Tarzan.png",
   "url": "https://api.disneyapi.dev/characters/6610"
@@ -5108,7 +5108,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 6670,
+    "id": 6670,
     "name": "The Evil Queen",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/89/Profile_-_The_Evil_Queen.jpeg",
     "url": "https://api.disneyapi.dev/characters/6670"
@@ -5149,7 +5149,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 6726,
+      "id": 6726,
       "name": "Thumper",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/16/Profile_-_Thumper.png",
       "url": "https://api.disneyapi.dev/characters/6726"
@@ -5209,7 +5209,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 6768,
+"id": 6768,
 "name": "Timon",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/45/Profile_-_Timon.jpeg",
 "url": "https://api.disneyapi.dev/characters/6768"
@@ -5289,7 +5289,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 6776,
+  "id": 6776,
   "name": "Tinker Bell",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Profile_-_Tinker_Bell.jpeg",
   "url": "https://api.disneyapi.dev/characters/6776"
@@ -5328,7 +5328,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 6874,
+"id": 6874,
 "name": "Tramp",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/fb/Profile_-_Tramp.jpeg",
 "url": "https://api.disneyapi.dev/characters/6874"
@@ -5372,7 +5372,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 6912,
+  "id": 6912,
   "name": "King Triton",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/df/Profile_-_King_Triton.jpeg",
   "url": "https://api.disneyapi.dev/characters/6912"
@@ -5398,7 +5398,7 @@
     "parkAttractions": [ ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 6958,
+    "id": 6958,
     "name": "Will Turner",
     "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/fd/Will_Turner_curseless.jpg",
     "url": "https://api.disneyapi.dev/characters/6958"
@@ -5460,7 +5460,7 @@
       ],
       "allies": [ ],
       "enemies": [ ],
-      "_id": 7026,
+      "id": 7026,
       "name": "Ursula",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/72/Profile_-_Ursula.jpeg",
       "url": "https://api.disneyapi.dev/characters/7026"
@@ -5507,7 +5507,7 @@
 ],
 "allies": [ ],
 "enemies": [ ],
-"_id": 7240,
+"id": 7240,
 "name": "White Rabbit",
 "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/0f/Profile_-_White_Rabbit.jpeg",
 "url": "https://api.disneyapi.dev/characters/7240"
@@ -5539,7 +5539,7 @@
   ],
   "allies": [ ],
   "enemies": [ ],
-  "_id": 7450,
+  "id": 7450,
   "name": "Shan-Yu",
   "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/da/Profile_-_Shan_Yu.jpeg",
   "url": "https://api.disneyapi.dev/characters/7450"
@@ -5580,7 +5580,7 @@
     ],
     "allies": [ ],
     "enemies": [ ],
-    "_id": 7473,
+    "id": 7473,
     "name": "Zazu",
     "imageUrl":"https://static.wikia.nocookie.net/disney/images/9/95/Profile_-_Zazu.jpeg",
     "url": "https://api.disneyapi.dev/characters/7473"
