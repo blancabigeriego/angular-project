@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Character } from 'src/app/models/character.model';
-import { loadCharacters, loadingCharacters } from 'src/app/actions/characters.action';
+import { loadCharacters, loadingCharacters } from 'src/app/state/actions/characters.action';
 import { AppState } from 'src/app/state/app.state';
 import { GetDataService } from 'src/app/services/get-data.service';
 import { ThisReceiver } from '@angular/compiler';
@@ -21,7 +21,7 @@ export class HomePageComponentComponent implements OnInit {
   characters$: Observable<Character[]>;
 
   constructor( private store: Store<AppState>,
-    private GetDataService: GetDataService
+   
     ){
     this.loading$ = new Observable<boolean>();
     this.characters$ = new Observable<Character[]>();

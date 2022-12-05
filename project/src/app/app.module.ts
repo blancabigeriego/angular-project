@@ -12,6 +12,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { EffectsModule } from '@ngrx/effects';
 import { CharactersEffects } from './state/effects/characters.effect';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
+import { CharacterDetailsEffect } from './state/effects/character-details.effect';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { CharacterDetailsComponent } from './components/character-details/charac
     HttpClientModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CharactersEffects])
+    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect])
   ],
   providers: [],
   bootstrap: [AppComponent]

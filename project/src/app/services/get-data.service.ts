@@ -8,7 +8,7 @@ import { delay, Observable } from 'rxjs';
 })
 export class GetDataService {
 
-  readonly BASE_URL = 'http://localhost:8000/data';
+  readonly BASE_URL = 'http://localhost:8000/films';
   constructor(private http: HttpClient) { }
 
   getCharacters(): Observable<Character[]> {
@@ -16,6 +16,7 @@ export class GetDataService {
   }
 
   getCharacterById(id: number): Observable<Character> {
+    console.log(id);
     return this.http.get<Character>(`${this.BASE_URL}/${id}`);
   }
 }

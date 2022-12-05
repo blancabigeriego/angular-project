@@ -1,6 +1,6 @@
 import { ActionReducerMap } from "@ngrx/store";
-import { charactersReducer, CharacterState } from "../reducers/characters.reducer";
-import { characterDetailsReducer, CharacterDetailState } from "../reducers/character-details.reducer";
+import { charactersReducer, CharacterState } from "./reducers/characters.reducer";
+import { characterDetailsReducer, CharacterDetailState } from "./reducers/character-details.reducer";
 
 
 export interface AppState {

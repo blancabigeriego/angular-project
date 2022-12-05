@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { map, mergeMap } from "rxjs";
 import { GetDataService } from "src/app/services/get-data.service";
-import { loadCharacter, loadingCharacter } from "src/app/actions/character-details.action";
+import { loadCharacter, loadingCharacter } from "src/app/state/actions/character-details.action";
 
 @Injectable()
 export class CharacterDetailsEffect{
@@ -16,7 +16,9 @@ export class CharacterDetailsEffect{
             ofType(loadingCharacter),
             mergeMap(action => this.getDataService.getCharacterById(action.id)
             .pipe(
-                map(character => loadCharacter({ character }))
+                map(character => {
+                    console.log("test");
+                    return loadCharacter({ character })})
             ))
         )
     })

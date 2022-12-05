@@ -1,7 +1,7 @@
 
 import { createSelector } from '@ngrx/store';
 import { AppState } from '../app.state';
-import { CharacterDetailState } from 'src/app/reducers/character-details.reducer';
+import { CharacterDetailState } from 'src/app/state/reducers/character-details.reducer';
 
 export const selectCharacterDetailState = (state: AppState) => state.characterDetailState;
 

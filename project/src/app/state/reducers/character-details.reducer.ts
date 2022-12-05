@@ -1,5 +1,5 @@
 import { createReducer, on } from "@ngrx/store";
-import { Character } from "../models/character.model";
+import { Character } from "../../models/character.model";
 import { loadCharacter } from "../actions/character-details.action";
 
 export interface CharacterDetailState  {
@@ -12,10 +12,10 @@ export const initialState: CharacterDetailState = {
 
 export const characterDetailsReducer = createReducer(
 initialState,
-on(loadCharacter, (state, { character})=>{
+on(loadCharacter, (state, { character })=>{
     return {
         ...state,
-        character: character
+        character: character,
     };
 })
 )

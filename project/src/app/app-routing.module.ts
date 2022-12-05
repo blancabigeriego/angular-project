@@ -11,13 +11,14 @@ const routes: Routes = [
     component: LandingComponent,
   },
   {
-    path: 'characters',
-    component: HomePageComponentComponent,
-  },
-  {
     path: 'characters/:id',
     component: CharacterDetailsComponent
+  },
+  {
+    path: 'characters',
+    component: HomePageComponentComponent,
   }
+ 
   
 ];
 

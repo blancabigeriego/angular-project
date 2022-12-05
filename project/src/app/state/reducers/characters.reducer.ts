@@ -1,7 +1,7 @@
 import { createReducer, on } from "@ngrx/store";
-import { Character } from "../models/character.model";
+import { Character } from "../../models/character.model";
 import { loadCharacters, loadingCharacters } from "../actions/characters.action";
-import { state } from "@angular/animations";
+
 
 export interface CharacterState {
     loading: boolean,

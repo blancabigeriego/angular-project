@@ -5,7 +5,7 @@ import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/state/app.state';
 import { Character } from 'src/app/models/character.model';
 import { selectCharacter } from 'src/app/state/selector/character-details.selector';
-import { loadCharacter, loadingCharacter } from 'src/app/actions/character-details.action';
+import { loadingCharacter } from 'src/app/state/actions/character-details.action';
 
 @Component({
   selector: 'app-character-details',
@@ -21,15 +21,27 @@ export class CharacterDetailsComponent implements OnInit {
   private store: Store<AppState>,
   private router: Router,
  ){
-  this.id = Infinity,
-  this.character$ = this.store.select(selectCharacter);
+  this.id = 0,
+  this.character$ = new Observable<Character>();
 }
 
 ngOnInit(): void {
   this.id = this.route.snapshot.params['id'];
   this.character$ = this.store.select(selectCharacter);
+  // this.character$.subscribe({
+  //   next: (data) => {
+  //     console.log(data)
+  //   }
+  // })
+  // this.character$.subscribe(
+  //   (data) => {
+  //     console.log(data)
+  //   }
+  // )`
   
-  this.store.dispatch(loadingCharacter({ id: this.id}));
+  
+  this.store.dispatch(loadingCharacter({ id: this.id}))
+  
 }
 
  goBack(): void {

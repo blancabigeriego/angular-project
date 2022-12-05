@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { map, mergeMap } from "rxjs";
 import { GetDataService } from "src/app/services/get-data.service";
-import { loadCharacters, loadingCharacters } from "src/app/actions/characters.action";
+import { loadCharacters, loadingCharacters } from "src/app/state/actions/characters.action";
 
 @Injectable()
 export class CharactersEffects {
