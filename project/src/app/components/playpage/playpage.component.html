@@ -65,6 +65,9 @@
         [formControl]="imageInput"
         name="image"
       />
+      <button type="submit" [disabled]="createForm.invalid">
+        Welcome to Disney
+      </button>
     </form>
   </div>
 </section>

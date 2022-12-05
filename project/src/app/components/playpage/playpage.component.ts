@@ -5,6 +5,7 @@ import { select, Store } from '@ngrx/store';
 import { Observable, take } from 'rxjs';
 import { CreateCharacter, initCreateCharacter } from 'src/app/state/actions/create-character.action';
 import { AppState } from 'src/app/state/app.state';
+import { characterDetailsReducer } from 'src/app/state/reducers/character-details.reducer';
 import { selectCreateCharacterSuccess } from 'src/app/state/selector/create-character.selector';
 
 @Component({
@@ -35,19 +36,19 @@ export class PlaypageComponent implements OnInit {
   ){
     this.createCharacterSuccess$ = new Observable();
     this.nameInput = new FormControl('', [Validators.required]);
-    this.filmsInput = new FormControl('',[Validators.required]);
-    this.shortFilmsInput = new FormControl('');
-    this.tvShowsInput = new FormControl('');
-    this.videoGamesInput = new FormControl('', [Validators.required]);
-    this.parkAttractionsInput = new FormControl('', [Validators.required]);
-    this.alliesInput = new FormControl('', [Validators.required]);
-    this.enemiesInput = new FormControl('');
+    this.filmsInput = new FormControl([],[Validators.required]);
+    this.shortFilmsInput = new FormControl([]);
+    this.tvShowsInput = new FormControl([]);
+    this.videoGamesInput = new FormControl([], [Validators.required]);
+    this.parkAttractionsInput = new FormControl([], [Validators.required]);
+    this.alliesInput = new FormControl([], [Validators.required]);
+    this.enemiesInput = new FormControl([]);
     this.imageInput = new FormControl('', [Validators.required]);
 
     this.createForm = new FormGroup({
       name: this.nameInput,
       films: this.filmsInput,
-      tvShowsInput: this.tvShowsInput,
+      tvShows: this.tvShowsInput,
       videoGames: this.videoGamesInput,
       parkAttractions: this.parkAttractionsInput,
       allies: this.alliesInput,
@@ -62,13 +63,19 @@ export class PlaypageComponent implements OnInit {
   }
 
   createCharacter(): void {
-    this.store.dispatch(CreateCharacter({ character: this.createForm.value}));
+    this.store.dispatch(CreateCharacter({       
+      
+    character: this.createForm.value
+      
+    
+    }));
 
     this.createCharacterSuccess$.subscribe(success =>{
       if(success){
         alert('Well done!! You have created your own Character!')
       } else{
         alert('Something went wrong, please try again!')
+        console.log(this.createForm.value)
       }
     })
   }
