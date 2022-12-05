@@ -14,4 +14,8 @@ export class GetDataService {
   getCharacters(): Observable<Character[]> {
     return this.http.get<Character[]>(`${this.BASE_URL}`).pipe(delay(1500));
   }
+
+  getCharacterById(id: string): Observable<Character> {
+    return this.http.get<Character>(`${this.BASE_URL}/${id}`);
+  }
 }
