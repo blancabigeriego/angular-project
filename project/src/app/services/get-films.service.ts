@@ -6,7 +6,7 @@ import { delay, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class GetDataService {
+export class GetFilmsService {
 
   readonly BASE_URL = 'http://localhost:8000/films';
   constructor(private http: HttpClient) { }

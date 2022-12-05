@@ -2,21 +2,21 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { map, mergeMap } from "rxjs";
-import { GetDataService } from "src/app/services/get-data.service";
+import { GetFilmsService } from "src/app/services/get-films.service";
 import { loadCharacters, loadingCharacters } from "src/app/state/actions/characters.action";
 
 @Injectable()
 export class CharactersEffects {
     constructor(
         private actions$: Actions,
-        private getDataService: GetDataService
+        private getFilmsService: GetFilmsService
     ){}
 
 
 loadingCharacters$ = createEffect(()=> {
     return this.actions$.pipe(
         ofType(loadingCharacters),
-        mergeMap(()=> this.getDataService.getCharacters()
+        mergeMap(()=> this.getFilmsService.getCharacters()
         .pipe(
             map(characters => loadCharacters ({ characters }),
             )

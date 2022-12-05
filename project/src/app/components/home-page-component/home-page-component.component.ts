@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Character } from 'src/app/models/character.model';
 import { loadCharacters, loadingCharacters } from 'src/app/state/actions/characters.action';
 import { AppState } from 'src/app/state/app.state';
-import { GetDataService } from 'src/app/services/get-data.service';
+import { GetFilmsService } from 'src/app/services/get-films.service';
 import { ThisReceiver } from '@angular/compiler';
 import { selectCharacters, selectLoading } from 'src/app/state/selector/characters.selector';
 
