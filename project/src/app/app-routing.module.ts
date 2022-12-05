@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 import { HomePageComponentComponent } from './components/home-page-component/home-page-component.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { PlaypageComponent } from './components/playpage/playpage.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,11 @@ const routes: Routes = [
   {
     path: 'characters',
     component: HomePageComponentComponent,
-  }
+  },
+  {
+    path: 'play',
+    component: PlaypageComponent
+  },
  
   
 ];

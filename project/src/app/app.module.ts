@@ -14,6 +14,7 @@ import { CharactersEffects } from './state/effects/characters.effect';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 import { CharacterDetailsEffect } from './state/effects/character-details.effect';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PlaypageComponent } from './components/playpage/playpage.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HomePageComponentComponent,
     LandingComponent,
     CharacterDetailsComponent,
-    NavbarComponent
+    NavbarComponent,
+    PlaypageComponent
   ],
   imports: [
     BrowserModule,
