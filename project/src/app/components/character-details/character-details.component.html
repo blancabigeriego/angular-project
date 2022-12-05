@@ -1,1 +1,11 @@
-<p>character-details works!</p>
+<section>
+  <div *ngIf="character$ | async as character">
+    <a [routerLink]="['characters', character._id]">
+      <h2>{{ character.name }}</h2>
+      <img src="{{ character.imageUrl }}" alt="{{ character.name }}" />
+      <p>You can find me in {{ character.films }}</p>
+      <p>Or in my favourite park attractions {{ character.parkAttractions }}</p>
+    </a>
+    <button (click)="goBack()">Go back</button>
+  </div>
+</section>
