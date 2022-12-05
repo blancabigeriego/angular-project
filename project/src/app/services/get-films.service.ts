@@ -19,4 +19,8 @@ export class GetFilmsService {
     console.log(id);
     return this.http.get<Character>(`${this.BASE_URL}/${id}`);
   }
+
+  createCharacter(character: Character): Observable<Character> {
+    return this.http.post<Character>(`${this.BASE_URL}/characters`, character)
+  }
 }
