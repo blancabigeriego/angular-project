@@ -6,6 +6,7 @@ import { loadCharacters, loadingCharacters } from 'src/app/actions/characters.ac
 import { AppState } from 'src/app/state/app.state';
 import { GetDataService } from 'src/app/services/get-data.service';
 import { ThisReceiver } from '@angular/compiler';
+import { selectCharacters, selectLoading } from 'src/app/state/selector/characters.selector';
 
 
 @Component({
@@ -28,9 +29,8 @@ export class HomePageComponentComponent implements OnInit {
 
   ngOnInit(): void{
 
-    this.loading$ = this.store.select(state => state.charactersState.loading);
-    this.characters$ = this.store.select(state =>
-     state.charactersState.characters )
+    this.loading$ = this.store.select(selectLoading);
+    this.characters$ = this.store.select(selectCharacters)
 
     this.store.dispatch(loadingCharacters());
 
