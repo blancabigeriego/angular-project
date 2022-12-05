@@ -11,12 +11,14 @@ import { ROOT_REDUCERS } from './state/app.state';
 import { LandingComponent } from './components/landing/landing.component';
 import { EffectsModule } from '@ngrx/effects';
 import { CharactersEffects } from './state/effects/characters.effect';
+import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponentComponent,
-    LandingComponent
+    LandingComponent,
+    CharacterDetailsComponent
   ],
   imports: [
     BrowserModule,
