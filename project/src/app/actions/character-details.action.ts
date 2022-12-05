@@ -3,11 +3,11 @@ import { Character } from "../models/character.model";
 
 export const loadingCharacter = createAction(
     '[Character Details] Loading Character',
-    props<{ id: string }>
+    props<{ id: number }>()
 
 );
 
 export const loadCharacter = createAction(
     '[Character Details] Load Character',
-    props<{ character: Character}>
+    props<{ character: Character}>()
 );
