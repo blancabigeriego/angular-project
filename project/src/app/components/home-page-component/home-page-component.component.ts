@@ -34,7 +34,6 @@ export class HomePageComponentComponent implements OnInit {
 
     this.store.dispatch(loadingCharacters());
 
-    this.GetDataService.getCharacters().subscribe((characters)=>{ this.store.dispatch(loadCharacters({ characters }));
-  })
+  
   }
 }

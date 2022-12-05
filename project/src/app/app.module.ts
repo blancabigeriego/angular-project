@@ -10,6 +10,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ROOT_REDUCERS } from './state/app.state';
 import { LandingComponent } from './components/landing/landing.component';
 import { EffectsModule } from '@ngrx/effects';
+import { CharactersEffects } from './state/effects/characters.effect';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { EffectsModule } from '@ngrx/effects';
     HttpClientModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([CharactersEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
