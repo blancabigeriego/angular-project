@@ -17,6 +17,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlaypageComponent } from './components/playpage/playpage.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditCharacterComponent } from './components/edit-character/edit-character.component';
+import { EditCharacterEffects } from './state/effects/edit-character.effect';
+import { CreateCharacterEffects } from './state/effects/create-character.effect';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,7 @@ import { EditCharacterComponent } from './components/edit-character/edit-charact
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect])
+    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]

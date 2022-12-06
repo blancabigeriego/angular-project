@@ -21,7 +21,7 @@ export class GetFilmsService {
   }
 
   createCharacter(character: Character): Observable<Character> {
-    return this.http.post<Character>(`${this.BASE_URL}/characters`, character)
+    return this.http.post<Character>(`${this.BASE_URL}`, character)
   }
 
 
@@ -40,7 +40,7 @@ export class GetFilmsService {
       parkAttractions: character.parkAttractions
 
     }
-    return this.http.put<Character>(`${this.BASE_URL}/characters/${character.id}/get/${character.id}`, body)
+    return this.http.put<Character>(`${this.BASE_URL}/characters/${character.id}`, body)
   }
 
   

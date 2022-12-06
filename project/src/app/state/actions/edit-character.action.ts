@@ -7,7 +7,7 @@ export const initEditCharacter = createAction(
 
 export const editCharacter = createAction(
     '[Edit Character] Edit Character',
-    props<{ character: Character}>
+    props<{ character: Character}>()
 )
 
 export const editCharacterSuccess = createAction(
