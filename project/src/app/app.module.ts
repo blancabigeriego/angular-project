@@ -16,6 +16,7 @@ import { CharacterDetailsEffect } from './state/effects/character-details.effect
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlaypageComponent } from './components/playpage/playpage.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditCharacterComponent } from './components/edit-character/edit-character.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     LandingComponent,
     CharacterDetailsComponent,
     NavbarComponent,
-    PlaypageComponent
+    PlaypageComponent,
+    EditCharacterComponent
   ],
   imports: [
     BrowserModule,
