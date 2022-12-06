@@ -24,5 +24,11 @@ export class GetFilmsService {
     return this.http.post<Character>(`${this.BASE_URL}/characters`, character)
   }
 
+
+  //I dont know if this is right
+  editCharacterById(id: number, character: Character): Observable<Character>{
+    return this.http.put<Character>(`${this.BASE_URL}/edit/${id}`, character)
+  }
+
   
 }
