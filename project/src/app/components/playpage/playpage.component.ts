@@ -62,7 +62,25 @@ export class PlaypageComponent implements OnInit {
     this.store.dispatch(initCreateCharacter());
   }
 
-  createCharacter(): void {
+  createCharacter(): any {
+    //add this and see if it works
+    // const values = this.createForm.value;
+    // console.log(values);
+    
+    // let arr= Object.values(values)
+    // console.log(arr);
+    // for(let key of arr){
+    //   if(typeof(key) !== 'string' && typeof(key) !== 'number'){
+    //     return [key]
+    //   }
+    // }
+    //  const data = arr.forEach((value, index)=>{
+    //   arr.slice(index, index+1)
+      
+    // })
+   
+    
+
     this.store.dispatch(CreateCharacter({       
       
     character: this.createForm.value
