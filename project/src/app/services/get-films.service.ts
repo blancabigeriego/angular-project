@@ -25,10 +25,23 @@ export class GetFilmsService {
   }
 
 
-  //I dont know if this is right
-  // editCharacter(id: number, character: Character): Observable<Character>{
-  //   return this.http.put<Character>(`${this.BASE_URL}/characters/${id}`, character)
-  // }
+  // I dont know if this is right
+  editCharacter(character: Character): Observable<Character>{
+    const body ={
+      id: character.id,
+      name: character.name,
+      films: character.films,
+      shortFilms: character.shortFilms,
+      tvShows: character.tvShows,
+      videoGames: character.videoGames,
+      allies: character.allies,
+      enemies: character.enemies,
+      imageUrl: character.imageUrl,
+      parkAttractions: character.parkAttractions
+
+    }
+    return this.http.put<Character>(`${this.BASE_URL}/characters/${character.id}/get/${character.id}`, body)
+  }
 
   
 }

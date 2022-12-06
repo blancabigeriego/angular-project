@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Character } from 'src/app/models/character.model';
 
 @Component({
   selector: 'app-edit-character',
