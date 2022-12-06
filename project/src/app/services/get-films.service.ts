@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpBackend, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Character } from '../models/character.model';
 import { delay, Observable } from 'rxjs';
 
@@ -26,9 +26,9 @@ export class GetFilmsService {
 
 
   //I dont know if this is right
-  editCharacterById(id: number, character: Character): Observable<Character>{
-    return this.http.put<Character>(`${this.BASE_URL}/edit/${id}`, character)
-  }
+  // editCharacter(id: number, character: Character): Observable<Character>{
+  //   return this.http.put<Character>(`${this.BASE_URL}/characters/${id}`, character)
+  // }
 
   
 }

@@ -25,7 +25,7 @@ const routes: Routes = [
     component: PlaypageComponent
   },
   {
-    path: 'edit',
+    path: 'characters/:id/edit/:id',
     component: EditCharacterComponent
   }
  

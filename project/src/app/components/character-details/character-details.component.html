@@ -22,7 +22,7 @@
 
     <button (click)="goBack()">Go back</button>
 
-    <a routerLink="/edit" routerLinkActive="active"
+    <a [routerLink]="['edit', character.id]" routerLinkActive="active"
       >Edit {{ character.name }}</a
     >
   </div>
