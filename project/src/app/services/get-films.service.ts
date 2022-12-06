@@ -27,8 +27,9 @@ export class GetFilmsService {
 
   // I dont know if this is right
   editCharacter(character: Character): Observable<Character>{
+    console.log(character)
     const body ={
-      id: character.id,
+      //id: character.id,
       name: character.name,
       films: character.films,
       shortFilms: character.shortFilms,
@@ -40,7 +41,7 @@ export class GetFilmsService {
       parkAttractions: character.parkAttractions
 
     }
-    return this.http.put<Character>(`${this.BASE_URL}/characters/${character.id}`, body)
+    return this.http.put<Character>(`${this.BASE_URL}/${character.id}`, body)
   }
 
   

@@ -1,22 +1,90 @@
 <app-navbar></app-navbar>
+<h2>Edit Character:</h2>
 <section class="edit">
-  <form>
-    <label>Character's new name:</label>
-    <input type="text" />
-    <label>Character's new films:</label>
-    <input type="text" />
-    <label>Character's new series:</label>
-    <input type="text" />
-    <label>Character's new attractions:</label>
-    <input type="text" />
-    <label>Character's new allies:</label>
-    <input type="text" />
-    <label>Character's new enemies:</label>
-    <input type="text" />
-    <label>Character's new image:</label>
-    <input type="text" />
+  <form (ngSubmit)="editCharacter()" [formGroup]="editForm">
+    <label for="name">Character's new name:</label>
+    <textarea
+      name="name"
+      placeholder="New name.."
+      [formControl]="nameInput"
+    ></textarea>
+    <label for="films"
+      >Character's new films: (If more than one write each one in a new
+      line)</label
+    >
+    <textarea
+      name="films"
+      placeholder="First film...\n Second film...\n Third film..."
+      [formControl]="filmsInput"
+      name="films"
+    ></textarea>
+    <label for="shortFilms"
+      >Character's new shortfilms:(If more than one write each one in a new
+      Line)</label
+    >
+    <textarea
+      name="shortFilms"
+      placeholder="Short films here...\n More films..."
+      [formControl]="shortFilmsInput"
+      name="shortFilms"
+    ></textarea>
+    <label for="tvShows"
+      >Character's new TV Shows:(If more than one write each one in a new
+      Line)</label
+    >
+    <textarea
+      placeholder="TV Shows here...\n More TV shows..."
+      [formControl]="tvShowsInput"
+      name="tvShows"
+    ></textarea>
+    <label for="videogames"
+      >New videogames(If more than one write each one in a new Line)</label
+    >
+    <textarea
+      type="text"
+      placeholder="Video Games here...\n More Video Games..."
+      [formControl]="videoGamesInput"
+      name="videogames"
+    ></textarea>
+    <label for="parkAttractions"
+      >Character's new attractions(If more than one write each one in a new
+      Line)</label
+    >
+    <textarea
+      type="text"
+      placeholder="Park Attractions here...\n More Park Attractions..."
+      [formControl]="parkAttractionsInput"
+      name="parkAttractions"
+    ></textarea>
+    <label for="allies"
+      >Who are the character's new friends?(If more than one write each one in a
+      new Line)</label
+    >
+    <textarea
+      type="text"
+      placeholder="Friends here...\n More friends..."
+      [formControl]="alliesInput"
+      name="allies"
+    ></textarea>
+    <label for="enemies"
+      >Who are the character's new enemies?(If he/she has any)</label
+    >
+    <textarea
+      type="text"
+      placeholder="Enemies here...\nMore enemies..."
+      [formControl]="enemiesInput"
+      name="enemies"
+    ></textarea>
+    <label for="image"
+      >Can you give us the URL of the character's new picture???</label
+    >
+    <textarea
+      type="text"
+      placeholder="Picture URL here..."
+      [formControl]="imageInput"
+      name="image"
+    ></textarea>
+
+    <button type="submit">Update</button>
   </form>
-  <div class="btns">
-    <button>Update</button> <button>Delete Character</button>
-  </div>
 </section>

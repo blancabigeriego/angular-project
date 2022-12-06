@@ -66,17 +66,19 @@ export class PlaypageComponent implements OnInit {
   createCharacter(): void {
     let submittedCharacter = new Character(
       this.filmsInput.value.trim().split('\n'),
-      [this.shortFilmsInput.value],
-      [this.tvShowsInput.value],
-      [this.videoGamesInput.value],
-      [this.parkAttractionsInput.value],
-      [this.alliesInput.value],
-      [this.enemiesInput.value],
+      this.shortFilmsInput.value.trim().split('\n'),
+      this.tvShowsInput.value.trim().split('\n'),
+      this.videoGamesInput.value.trim().split('\n'),
+      this.parkAttractionsInput.value.trim().split('\n'),
+      this.alliesInput.value.trim().split('\n'),
+      this.enemiesInput.value.trim().split('\n'),
       0,
       this.nameInput.value,
       this.imageInput.value
     );
     console.log(submittedCharacter);
+
+    
     this.store.dispatch(
       CreateCharacter({
         character: submittedCharacter,
