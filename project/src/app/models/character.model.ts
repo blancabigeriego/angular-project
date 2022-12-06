@@ -38,11 +38,11 @@ export class Character{
 
     }
 
-    getFilms(): string[]{
+    public getFilms(): string[]{
         return this.films
     }
 
-    setFilms(films: any){
+    public setFilms(films: string | string[]){
         if( typeof(films) === "string"){
             this.films = [films]
         }else{
@@ -50,13 +50,13 @@ export class Character{
         }
     }
 
-    getShortFilms(): string[]{
+    public getShortFilms(): string[]{
         
         return this.shortFilms;
         
     }
 
-    setShortFilms(shortFilms: any){
+    public setShortFilms(shortFilms: string | string []){
         if( typeof(shortFilms) === "string"){
             this.shortFilms = [shortFilms]
         }else{
@@ -64,11 +64,11 @@ export class Character{
         }
     }
 
-    getTvShows(): string[]{
+    public getTvShows(): string[]{
         return this.tvShows
     }
 
-    setTvShows( tvShows: any){
+    public setTvShows( tvShows: string | string[]){
         if( typeof(tvShows) === "string"){
             this.tvShows = [tvShows]
         }else{
@@ -76,11 +76,11 @@ export class Character{
         }
     }
 
-    getVideoGames():string[]{
+    public getVideoGames():string[]{
         return this.videoGames
     }
 
-    setVideoGames(videoGames: any){
+    public setVideoGames(videoGames: string | string[]){
         if( typeof(videoGames) === "string"){
             this.videoGames = [videoGames]
         }else{
@@ -88,10 +88,10 @@ export class Character{
         }
     }
 
-    getParkAttractions(): string[]{
+    public getParkAttractions(): string[]{
         return this.parkAttractions;
     }
-    setParkAttractions(parkAttractions: any){
+    public setParkAttractions(parkAttractions: string | string []){
         if( typeof(parkAttractions) === "string"){
             this.parkAttractions = [parkAttractions]
         }else{
@@ -99,11 +99,11 @@ export class Character{
         }
     }
 
-    getAllies(): string[]{
+    public getAllies(): string[]{
         return this.allies;
     }
 
-    setAllies(allies: any){
+    public setAllies(allies: string | string[]){
         if( typeof(allies) === "string"){
             this.allies = [allies]
         }else{
@@ -111,10 +111,10 @@ export class Character{
         }
     }
 
-    getEnemies(): string[]{
+    public getEnemies(): string[]{
         return this.enemies;
     }
-    setEnemies(enemies: any){
+    public setEnemies(enemies: string | string[]){
         if( typeof(enemies) === "string"){
             this.enemies = [enemies]
         }else{
@@ -122,27 +122,27 @@ export class Character{
         }
     }
 
-    getId(): number{
+    public getId(): number{
         return this.id;
     }
 
-    setId(id: number){
+    public setId(id: number){
         this.id = id;
     }
 
-    getName(): string{
+    public getName(): string{
         return this.name;
     }
 
-    setName(name: string){
+    public setName(name: string){
         this.name= name;
     }
 
-    getImageUrl(): string{
+    public getImageUrl(): string{
         return this.imageUrl
     }
 
-    setImageUrl(imageUrl: string){
+    public setImageUrl(imageUrl: string){
         this.imageUrl= imageUrl;
     }
 
