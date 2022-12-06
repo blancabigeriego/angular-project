@@ -15,6 +15,7 @@ import { CharacterDetailsComponent } from './components/character-details/charac
 import { CharacterDetailsEffect } from './state/effects/character-details.effect';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlaypageComponent } from './components/playpage/playpage.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PlaypageComponent } from './components/playpage/playpage.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect])

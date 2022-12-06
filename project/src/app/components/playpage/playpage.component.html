@@ -1,1 +1,73 @@
-<p>playpage works!</p>
+<section>
+  <div>
+    <h2>Become the Main Character!</h2>
+    <form (ngSubmit)="createCharacter()" [formGroup]="createForm">
+      <label for="name">What is your name?</label>
+      <input
+        type="text"
+        placeholder="Name here..."
+        [formControl]="nameInput"
+        name="name"
+      />
+      <label for="films">In what films would you like to appear?</label>
+      <input
+        type="text"
+        placeholder="Films here..."
+        [formControl]="filmsInput"
+        name="films"
+      />
+      <label for="shortFilms">Would you like to be in any short films?</label>
+      <input
+        type="text"
+        placeholder="Short films here..."
+        [formControl]="shortFilmsInput"
+        name="shortFilms"
+      />
+      <label for="tvShows">Would you like to be in any TV shows?</label>
+      <input
+        type="text"
+        placeholder="TV Shows here..."
+        [formControl]="tvShowsInput"
+        name="tvShows"
+      />
+      <label for="videogames">In what videogames do you appear??</label>
+      <input
+        type="text"
+        placeholder="Video Games here..."
+        [formControl]="videoGamesInput"
+        name="videogames"
+      />
+      <label for="parkAttractions">Where can we find you in the park?</label>
+      <input
+        type="text"
+        placeholder="Park Attractions here..."
+        [formControl]="parkAttractionsInput"
+        name="parkAttractions"
+      />
+      <label for="allies">Who are your best Disney Friends?</label>
+      <input
+        type="text"
+        placeholder="Friends here..."
+        [formControl]="alliesInput"
+        name="allies"
+      />
+      <label for="enemies">Who are your enemies?(If you have any)</label>
+      <input
+        type="text"
+        placeholder="Enemies here..."
+        [formControl]="enemiesInput"
+        name="enemies"
+      />
+      <label for="image">Can you give us the URL of your picture???</label>
+      <input
+        type="text"
+        placeholder="Picture URL here..."
+        [formControl]="imageInput"
+        name="image"
+      />
+      <button type="submit" [disabled]="createForm.invalid">
+        Welcome to Disney
+      </button>
+    </form>
+  </div>
+</section>
