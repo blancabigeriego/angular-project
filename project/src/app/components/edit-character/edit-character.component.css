@@ -1,0 +1,20 @@
+.edit{
+    display: flex;
+    gap: 100px;
+
+}
+
+.edit form{
+    display: flex;
+    flex-direction: column;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 10px;
+    
+}
