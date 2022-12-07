@@ -86,12 +86,6 @@ export class EditCharacterComponent implements OnInit {
       this.imageInput.value,
 
     )
-
-
-
-
-
-
     this.store.dispatch(editCharacter({character: editedCharacter,}));
 
     // this.character$.subscribe(character => {
@@ -108,6 +102,22 @@ export class EditCharacterComponent implements OnInit {
         this.router.navigate(['/characters']);
       }
     })
+  }
+
+  deleteCharacter(): void{
+   let deletedCharacter = new Character(
+    this.filmsInput.value.trim().split('\n'),
+    this.shortFilmsInput.value.trim().split('\n'),
+    this.tvShowsInput.value.trim().split('\n'),
+    this.videoGamesInput.value.trim().split('\n'),
+    this.parkAttractionsInput.value.trim().split('\n'),
+    this.alliesInput.value.trim().split('\n'),
+    this.enemiesInput.value.trim().split('\n'),
+    this.route.snapshot.params['id'],
+    this.nameInput.value,
+    this.imageInput.value,
+    )
+
   }
 
 }
