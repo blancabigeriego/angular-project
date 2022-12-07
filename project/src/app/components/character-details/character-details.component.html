@@ -7,9 +7,13 @@
     <p *ngIf="character.shortFilms.length !== 0">
       Or in shorter films like: {{ character.shortFilms }}
     </p>
+    <p *ngIf="character.tvShows.length !== 0">
+      I'm also on Tv in: {{ character.parkAttractions }}
+    </p>
     <p *ngIf="character.parkAttractions.length !== 0">
       Or in my favourite park attractions {{ character.parkAttractions }}
     </p>
+
     <p *ngIf="character.videoGames.length !== 0">
       You can also play with me in {{ character.videoGames }}
     </p>
@@ -22,7 +26,9 @@
 
     <button (click)="goBack()">Go back</button>
 
-    <a [routerLink]="['edit', character.id]" routerLinkActive="active"
+    <a
+      [routerLink]="['/characters/edit', character.id]"
+      routerLinkActive="active"
       >Edit {{ character.name }}</a
     >
   </div>

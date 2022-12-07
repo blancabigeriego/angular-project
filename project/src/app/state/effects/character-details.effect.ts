@@ -17,7 +17,7 @@ export class CharacterDetailsEffect{
             mergeMap(action => this.getFilmsService.getCharacterById(action.id)
             .pipe(
                 map(character => {
-                    console.log("test");
+                    //console.log("test");
                     return loadCharacter({ character })})
             ))
         )

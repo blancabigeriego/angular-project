@@ -60,7 +60,7 @@ export class PlaypageComponent implements OnInit {
       selectCreateCharacterSuccess
     );
 
-    this.store.dispatch(initCreateCharacter());
+    //this.store.dispatch(initCreateCharacter());
   }
 
   createCharacter(): void {
