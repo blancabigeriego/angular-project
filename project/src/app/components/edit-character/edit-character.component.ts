@@ -7,8 +7,11 @@ import { HttpHeaders } from '@angular/common/http';
 import { Observable, take } from 'rxjs';
 import { AppState } from 'src/app/state/app.state';
 import { editCharacter, initEditCharacter } from 'src/app/state/actions/edit-character.action';
+import { deleteCharacter, initDeleteCharacter } from 'src/app/state/actions/delete-character.action';
 import { selectEditCharacterSuccess } from 'src/app/state/selector/edit-character.selector';
 import { selectCharacter } from 'src/app/state/selector/character-details.selector';
+import { deleteCharacterSuccess } from 'src/app/state/actions/delete-character.action';
+import { selectDeleteCharacterSuccess } from 'src/app/state/selector/delete-character.selector';
 
 @Component({
   selector: 'app-edit-character',
@@ -17,8 +20,9 @@ import { selectCharacter } from 'src/app/state/selector/character-details.select
 })
 export class EditCharacterComponent implements OnInit {
 
+  deleteCharacterSuccess$: Observable<boolean>;
   editCharacterSuccess$: Observable<boolean>;
-  character$: Observable<Character>
+  character$: Observable<Character>;
 
   editForm: FormGroup;
   nameInput: FormControl;
@@ -39,6 +43,7 @@ export class EditCharacterComponent implements OnInit {
     private route: ActivatedRoute,
 
   ){
+    this.deleteCharacterSuccess$ = new Observable();
     this.editCharacterSuccess$ = new Observable();
     this.nameInput = new FormControl('', [Validators.required]);
     this.filmsInput = new FormControl([], [Validators.required]);
@@ -67,8 +72,10 @@ export class EditCharacterComponent implements OnInit {
   }
   ngOnInit(): void{
     this.editCharacterSuccess$ = this.store.select(selectEditCharacterSuccess);
+    this.deleteCharacterSuccess$ = this.store.select(selectDeleteCharacterSuccess);
     this.character$ = this.store.select(selectCharacter)
     this.store.dispatch(initEditCharacter());
+    this.store.dispatch(initDeleteCharacter());
 
   }
 
@@ -117,6 +124,15 @@ export class EditCharacterComponent implements OnInit {
     this.nameInput.value,
     this.imageInput.value,
     )
+
+    this.store.dispatch(deleteCharacter({character: deletedCharacter,}));
+    this.deleteCharacterSuccess$.subscribe(success =>{
+      if(success){
+        alert('You have deleted the character!');
+        this.router.navigate(['/characters']);
+      }
+    })
+
 
   }
 
