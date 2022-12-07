@@ -43,6 +43,7 @@ export class EditCharacterComponent implements OnInit {
     private route: ActivatedRoute,
 
   ){
+    this.character$ = new Observable <Character>();
     this.deleteCharacterSuccess$ = new Observable();
     this.editCharacterSuccess$ = new Observable();
     this.nameInput = new FormControl('', [Validators.required]);
@@ -54,7 +55,7 @@ export class EditCharacterComponent implements OnInit {
     this.alliesInput = new FormControl([], [Validators.required]);
     this.enemiesInput = new FormControl([]);
     this.imageInput = new FormControl('', [Validators.required]);
-    this.character$ = new Observable <Character>();
+    
 
     this.editForm = new FormGroup({
       name: this.nameInput,
@@ -112,20 +113,11 @@ export class EditCharacterComponent implements OnInit {
   }
 
   deleteCharacter(): void{
-   let deletedCharacter = new Character(
-    this.filmsInput.value.trim().split('\n'),
-    this.shortFilmsInput.value.trim().split('\n'),
-    this.tvShowsInput.value.trim().split('\n'),
-    this.videoGamesInput.value.trim().split('\n'),
-    this.parkAttractionsInput.value.trim().split('\n'),
-    this.alliesInput.value.trim().split('\n'),
-    this.enemiesInput.value.trim().split('\n'),
-    this.route.snapshot.params['id'],
-    this.nameInput.value,
-    this.imageInput.value,
-    )
+   let deletedCharacterId: number = this.route.snapshot.params['id']
+    
+  
 
-    this.store.dispatch(deleteCharacter({character: deletedCharacter,}));
+    this.store.dispatch(deleteCharacter({id: deletedCharacterId,}));
     this.deleteCharacterSuccess$.subscribe(success =>{
       if(success){
         alert('You have deleted the character!');

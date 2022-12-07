@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { EditCharacterComponent } from './components/edit-character/edit-character.component';
 import { EditCharacterEffects } from './state/effects/edit-character.effect';
 import { CreateCharacterEffects } from './state/effects/create-character.effect';
+import { deleteCharacterEffect } from './state/effects/delete-character.effect';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { CreateCharacterEffects } from './state/effects/create-character.effect'
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects])
+    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects, deleteCharacterEffect ])
   ],
   providers: [],
   bootstrap: [AppComponent]

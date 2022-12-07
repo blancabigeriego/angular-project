@@ -4,12 +4,18 @@ import { Character } from "src/app/models/character.model";
 
 
 export const initDeleteCharacter = createAction(
-    '[Delete Apartment] Init Delete Character',
+    '[Delete Character] Init Delete Character',
   );
+// export const deleteCharacter = createAction(
+//     '[Delete Character] Delete Character',
+//     props<{ character: Character}>()
+// )
 export const deleteCharacter = createAction(
     '[Delete Character] Delete Character',
-    props<{ character: Character}>()
+    props<{ id: number}>()
 )
+
+
 
 export const deleteCharacterSuccess = createAction(
     '[Delete Character] Delete Character Success',

@@ -16,7 +16,7 @@ export class deleteCharacterEffect{
     deleteCharacter$ = createEffect(() => {
         return this.actions$.pipe(
             ofType(deleteCharacter),
-            mergeMap(action => this.getFilmsService.deleteCharacter(action.character).pipe(
+            mergeMap(action => this.getFilmsService.deleteCharacter(action.id).pipe(
                 map(result => deleteCharacterSuccess())
             )
         ),
