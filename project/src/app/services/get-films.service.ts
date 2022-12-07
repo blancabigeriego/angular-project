@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Character } from '../models/character.model';
 import { delay, Observable } from 'rxjs';
+import { deleteCharacter } from '../state/actions/delete-character.action';
 
 @Injectable({
   providedIn: 'root'
@@ -24,8 +25,6 @@ export class GetFilmsService {
     return this.http.post<Character>(`${this.BASE_URL}`, character)
   }
 
-
-  // I dont know if this is right
   editCharacter(character: Character): Observable<Character>{
     console.log(character)
     const body ={
@@ -42,6 +41,13 @@ export class GetFilmsService {
 
     }
     return this.http.put<Character>(`${this.BASE_URL}/${character.id}`, body)
+  }
+
+
+  //I dont know if this is right?
+  deleteCharacter(id: number): Observable<Character>{
+    
+     return this.http.delete<Character>(`${this.BASE_URL}/${id}`)
   }
 
   

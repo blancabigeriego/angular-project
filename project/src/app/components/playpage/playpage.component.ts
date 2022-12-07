@@ -60,7 +60,7 @@ export class PlaypageComponent implements OnInit {
       selectCreateCharacterSuccess
     );
 
-    this.store.dispatch(initCreateCharacter());
+    //this.store.dispatch(initCreateCharacter());
   }
 
   createCharacter(): void {
@@ -87,6 +87,7 @@ export class PlaypageComponent implements OnInit {
 
     this.createCharacterSuccess$.subscribe((success) => {
       success: alert('Well done!! You have created your own Character!');
+      this.router.navigate(['/characters']);
     });
   }
 }

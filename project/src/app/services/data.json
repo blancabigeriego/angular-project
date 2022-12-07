@@ -2,23 +2,6 @@
   "films": [
     {
       "films": [
-        "The Computer Wore Tennis Shoes",
-        "Now You See Him, Now You Don't",
-        "The Strongest Man in the World"
-      ],
-      "shortFilms": [],
-      "tvShows": [],
-      "videoGames": [],
-      "parkAttractions": [],
-      "allies": [],
-      "enemies": [],
-      "id": 14,
-      "name": "A.J. Arno",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2c/A.J._Arno.jpg",
-      "url": "https://api.disneyapi.dev/characters/14"
-    },
-    {
-      "films": [
         "Cheetah"
       ],
       "shortFilms": [],
@@ -5544,6 +5527,7 @@
       "url": "https://api.disneyapi.dev/characters/7450"
     },
     {
+      "name": "Zazu",
       "films": [
         "The Lion King",
         "The Lion King II: Simba's Pride",
@@ -5552,7 +5536,9 @@
         "The Lion Guard: Return of the Roar",
         "The Lion King (2019 film)"
       ],
-      "shortFilms": [],
+      "shortFilms": [
+        ""
+      ],
       "tvShows": [
         "Timon & Pumbaa",
         "House of Mouse",
@@ -5570,6 +5556,13 @@
         "Disney Magic Kingdoms",
         "Disney Emoji Blitz"
       ],
+      "allies": [
+        "Simba"
+      ],
+      "enemies": [
+        "Scar"
+      ],
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/95/Profile_-_Zazu.jpeg",
       "parkAttractions": [
         "The Enchanted Tiki Room: Under New Management",
         "Mickey's PhilharMagic",
@@ -5577,94 +5570,10 @@
         "The Legend of the Lion King",
         "Disney Dreams!"
       ],
-      "allies": [],
-      "enemies": [],
-      "id": 7473,
-      "name": "Zazu",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/95/Profile_-_Zazu.jpeg",
-      "url": "https://api.disneyapi.dev/characters/7473"
+      "id": 7473
     },
     {
-      "films": [
-        "Lion king"
-      ],
-      "shortFilms": [
-        "no"
-      ],
-      "tvShows": [
-        "no"
-      ],
-      "videoGames": [
-        "Lion King: the game"
-      ],
-      "parkAttractions": [
-        "Roller coaster"
-      ],
-      "allies": [
-        "Nala"
-      ],
-      "enemies": [
-        []
-      ],
-      "id": 7474,
-      "name": "Blanca Bigeriego Tejerina",
-      "imageUrl": "http://placekitten.com/g/200/300"
-    },
-    {
-      "films": [
-        "Lion King",
-        "Frozen"
-      ],
-      "shortFilms": [
-        "The short version of Lion King,\nThe short version of Frozen"
-      ],
-      "tvShows": [
-        []
-      ],
-      "videoGames": [
-        "Lion King: the game,\nFrozen: the game"
-      ],
-      "parkAttractions": [
-        "Roller coaster"
-      ],
-      "allies": [
-        "Blanca\nElsa"
-      ],
-      "enemies": [
-        "Blanca"
-      ],
-      "id": 7475,
-      "name": "Chus Cordero",
-      "imageUrl": "data:image/jpeg;base64,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"
-    },
-    {
-      "name": "aasdash",
-      "films": [
-        "h"
-      ],
-      "shortFilms": [
-        "h"
-      ],
-      "tvShows": [
-        "h"
-      ],
-      "videoGames": [
-        "h"
-      ],
-      "allies": [
-        "h"
-      ],
-      "enemies": [
-        "hh"
-      ],
-      "imageUrl": "h",
-      "parkAttractions": [
-        "h"
-      ],
-      "id": 7476
-    },
-    {
-      "name": "q",
+      "name": "",
       "films": [
         "q"
       ],
@@ -5675,7 +5584,7 @@
         "q"
       ],
       "videoGames": [
-        "q"
+        "qq"
       ],
       "allies": [
         "q"
@@ -5687,7 +5596,69 @@
       "parkAttractions": [
         "q"
       ],
-      "id": 7477
+      "id": 7476
+    },
+    {
+      "films": [
+        "Blanca",
+        "Blanca"
+      ],
+      "shortFilms": [
+        "Blanca",
+        "Blanca",
+        "Blanca"
+      ],
+      "tvShows": [
+        "Blanca",
+        "Blanca"
+      ],
+      "videoGames": [
+        "Blanca",
+        "Blanca"
+      ],
+      "parkAttractions": [
+        "Blanca",
+        "Blanca"
+      ],
+      "allies": [
+        "Blanca",
+        "Blanca",
+        "Blanca",
+        "Blanca"
+      ],
+      "enemies": [
+        "Blanca",
+        "Blanca"
+      ],
+      "id": 7477,
+      "name": "Blanca",
+      "imageUrl": "data:image/jpeg;base64,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"
+    },
+    {
+      "films": [
+        "Chusin"
+      ],
+      "shortFilms": [
+        "Chusin short"
+      ],
+      "tvShows": [
+        "Chusin on tv"
+      ],
+      "videoGames": [
+        "Chusin adventures"
+      ],
+      "parkAttractions": [
+        "Chusin Roller Coaster"
+      ],
+      "allies": [
+        "Blanca"
+      ],
+      "enemies": [
+        "Berto"
+      ],
+      "id": 7478,
+      "name": "Chusin",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHoAcQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwUBAgYEB//EADUQAAIBAwIEAgcGBwAAAAAAAAABAgMEERIhBTFBURMUIiMyUlNhkjNCgbHB8BVicXKRodH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APuIAAAAAARVrilQSdWajnkBKDxvidqvvyfy0siXFqWr7OenvtkCxBDRuaNb7Oom+3UmAAAAAAAAAAAAAAK6/wCIOjU8KilqXtN9Csr3FW4kpVZZaWFtgXUtVzVfeb/MiKAACMpuLTi8Ncmi44dfeM1SrP1nR+8UxvRn4dWE192SYV0wAIAAAAAAAAAAA5mr9rP+5/maEt1HTc1Y/wA7IioAAAHyAA6em804vukbGtJaacYvokjYigAAAAAAABrU1KEtCzLGxsAOYqTlUm5z3k+ZqS3cdF1Vj2myIqAAABPDTXQGYrVJRXNvAHRWkpzt4Tqe21lkxiKwklyRkigAAAAAAAAAAreM0o+FGqktSeG/kVB0txSVejKm/vLn2ObksSafNPAGAAVAsuDUoynOpJZccKLfQrTobKgrehGHXm38wPQACKAAAAAAAAA8VzxGjRyo+smukeX+Str31ettq0R7R2Atrm9o26eqWZe7HmUEnqk33eTAKgAABe2t/RrJRk9FT3ZfoUQA6kHO0LyvQxonmPuy3RZ23E6VT0aq8OX+iK94MJprKaa+RkAAAILq5p20NU+fSK5sprq9rXGU3ph7q/Ujuqrr15zb67fJEQAAFQAAAAAAAAAAE1vdVbd+rl6PuvkXNneU7lbbTXOL/QoDanOVOanB4lHdMiunB4P4lT7AD0eTtvgU/pHk7b4FP6ScAQeUtvgU/pKerxXhtGvVhVtHGnTel1NMcasyyue3s7f1L81kBQUeL8PnKMJcPqRnJ4jFKEs7R+e28sfgw+M8Li/StJJdHpi89+v7w3yTav2AKSnxPhztvGnbKOKk6enEc+jnfd8ml+PTub2d/wAPvKmilZzTcHNN01iSzjbD75/eC47hgc/c8TtaF/K08nRbjn1jnssJvfCe+3LtuYnxS2pRl5ixpQqJteGqkW9SjnHJL/nN4OhfQx1A5+XFbTMvDsqc4xbzJzSSxGMk3t6PtJblxb0LatQp1VbwjrgpYcd1lHojyRsgIfJ23wKf0jydt8Cn9JOAIPJ23wKf0gnAH//Z"
     }
   ]
 }
