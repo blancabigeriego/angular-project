@@ -1,7 +1,7 @@
 import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponentComponent } from './components/home-page-component/home-page-component.component';
@@ -16,6 +16,9 @@ import { CharacterDetailsEffect } from './state/effects/character-details.effect
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlaypageComponent } from './components/playpage/playpage.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditCharacterComponent } from './components/edit-character/edit-character.component';
+import { EditCharacterEffects } from './state/effects/edit-character.effect';
+import { CreateCharacterEffects } from './state/effects/create-character.effect';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     LandingComponent,
     CharacterDetailsComponent,
     NavbarComponent,
-    PlaypageComponent
+    PlaypageComponent,
+    EditCharacterComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect])
+    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]

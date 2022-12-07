@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpBackend, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Character } from '../models/character.model';
 import { delay, Observable } from 'rxjs';
 
@@ -16,11 +16,33 @@ export class GetFilmsService {
   }
 
   getCharacterById(id: number): Observable<Character> {
-    console.log(id);
+    
     return this.http.get<Character>(`${this.BASE_URL}/${id}`);
   }
 
   createCharacter(character: Character): Observable<Character> {
-    return this.http.post<Character>(`${this.BASE_URL}/characters`, character)
+    return this.http.post<Character>(`${this.BASE_URL}`, character)
   }
+
+
+  // I dont know if this is right
+  editCharacter(character: Character): Observable<Character>{
+    console.log(character)
+    const body ={
+      //id: character.id,
+      name: character.name,
+      films: character.films,
+      shortFilms: character.shortFilms,
+      tvShows: character.tvShows,
+      videoGames: character.videoGames,
+      allies: character.allies,
+      enemies: character.enemies,
+      imageUrl: character.imageUrl,
+      parkAttractions: character.parkAttractions
+
+    }
+    return this.http.put<Character>(`${this.BASE_URL}/${character.id}`, body)
+  }
+
+  
 }

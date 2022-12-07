@@ -6,6 +6,7 @@ import { AppState } from 'src/app/state/app.state';
 import { Character } from 'src/app/models/character.model';
 import { selectCharacter } from 'src/app/state/selector/character-details.selector';
 import { loadingCharacter } from 'src/app/state/actions/character-details.action';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-character-details',
