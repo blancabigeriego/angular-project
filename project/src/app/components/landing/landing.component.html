@@ -1,17 +1,19 @@
-<header class="header">
-  <img src="../assets/Disney_wordmark.svg" alt="disney-logo" />
-  <h1>WELCOME TO DISNEYLAND</h1>
-</header>
-<main class="container">
-  <img
-    src="../assets/personajes-disney-10761.jpg"
-    alt="disney-characters-pic"
-  />
-  <div class="text-container">
-    <p>
-      Get to know the Disney characters, choose your favourites and become the
-      hero of your favourite Disney film.
-    </p>
-    <a routerLink="characters">Get started!</a>
-  </div>
-</main>
+<mat-card class="landing">
+  <mat-card-header class="header">
+    <img matCardLgImage src="../assets/Disney_wordmark.svg" alt="disney-logo" />
+    <h1>WELCOME TO DISNEYLAND</h1>
+  </mat-card-header>
+  <mat-card-content class="container">
+    <img
+      src="../assets/personajes-disney-10761.jpg"
+      alt="disney-characters-pic"
+    />
+    <div class="text-container">
+      <mat-card-subtitle>
+        Get to know the Disney characters, choose your favourites and become the
+        hero of your favourite Disney film.
+      </mat-card-subtitle>
+      <a routerLink="characters">Get started!</a>
+    </div>
+  </mat-card-content>
+</mat-card>

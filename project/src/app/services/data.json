@@ -16,22 +16,31 @@
       "url": "https://api.disneyapi.dev/characters/16"
     },
     {
+      "name": "Abis Mal's Thugs",
       "films": [
         "The Return of Jafar",
         "Aladdin and the King of Thieves"
       ],
-      "shortFilms": [],
+      "shortFilms": [
+        ""
+      ],
       "tvShows": [
         "Aladdin (TV series)"
       ],
-      "videoGames": [],
-      "parkAttractions": [],
-      "allies": [],
-      "enemies": [],
-      "id": 21,
-      "name": "Abis Mal's Thugs",
+      "videoGames": [
+        ""
+      ],
+      "allies": [
+        ""
+      ],
+      "enemies": [
+        ""
+      ],
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/ba/Abis_Mal%27s_Thugs.jpg",
-      "url": "https://api.disneyapi.dev/characters/21"
+      "parkAttractions": [
+        ""
+      ],
+      "id": 21
     },
     {
       "films": [
@@ -5574,32 +5583,6 @@
         "Disney Dreams!"
       ],
       "id": 7473
-    },
-    {
-      "name": "",
-      "films": [
-        "q"
-      ],
-      "shortFilms": [
-        "q"
-      ],
-      "tvShows": [
-        "q"
-      ],
-      "videoGames": [
-        "qq"
-      ],
-      "allies": [
-        "q"
-      ],
-      "enemies": [
-        "q"
-      ],
-      "imageUrl": "q",
-      "parkAttractions": [
-        "q"
-      ],
-      "id": 7476
     },
     {
       "name": "Blanca",

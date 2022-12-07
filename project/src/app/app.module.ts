@@ -22,6 +22,8 @@ import { CreateCharacterEffects } from './state/effects/create-character.effect'
 import { deleteCharacterEffect } from './state/effects/delete-character.effect';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,8 @@ import {MatButtonModule} from '@angular/material/button';
     EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects, deleteCharacterEffect ]),
     BrowserAnimationsModule,
     MatButtonModule,
+    MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
