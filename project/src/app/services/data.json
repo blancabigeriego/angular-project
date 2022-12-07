@@ -2,23 +2,6 @@
   "films": [
     {
       "films": [
-        "The Computer Wore Tennis Shoes",
-        "Now You See Him, Now You Don't",
-        "The Strongest Man in the World"
-      ],
-      "shortFilms": [],
-      "tvShows": [],
-      "videoGames": [],
-      "parkAttractions": [],
-      "allies": [],
-      "enemies": [],
-      "id": 14,
-      "name": "A.J. Arno",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2c/A.J._Arno.jpg",
-      "url": "https://api.disneyapi.dev/characters/14"
-    },
-    {
-      "films": [
         "Cheetah"
       ],
       "shortFilms": [],

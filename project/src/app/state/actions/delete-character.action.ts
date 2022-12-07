@@ -5,3 +5,7 @@ export const deleteCharacter = createAction(
     '[Delete Character] Delete Character',
     props<{ character: Character}>()
 )
+
+export const deleteCharacterSuccess = createAction(
+    '[Delete Character] Delete Character Success',
+)

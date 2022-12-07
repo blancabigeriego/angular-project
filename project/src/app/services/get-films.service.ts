@@ -45,9 +45,9 @@ export class GetFilmsService {
 
 
   //I dont know if this is right?
-  deleteCharacter(character: Character): void{
+  deleteCharacter(character: Character): Observable<Character>{
     
-     this.http.delete<Character>(`${this.BASE_URL}/${character.id}`)
+     return this.http.delete<Character>(`${this.BASE_URL}/${character.id}`)
   }
 
   
