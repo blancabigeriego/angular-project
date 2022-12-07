@@ -20,7 +20,8 @@ import { EditCharacterComponent } from './components/edit-character/edit-charact
 import { EditCharacterEffects } from './state/effects/edit-character.effect';
 import { CreateCharacterEffects } from './state/effects/create-character.effect';
 import { deleteCharacterEffect } from './state/effects/delete-character.effect';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,9 @@ import { deleteCharacterEffect } from './state/effects/delete-character.effect';
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects, deleteCharacterEffect ])
+    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects, deleteCharacterEffect ]),
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

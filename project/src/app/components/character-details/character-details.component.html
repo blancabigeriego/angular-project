@@ -24,12 +24,15 @@
       My enemies are: {{ character.enemies }}
     </p>
 
-    <button (click)="goBack()">Go back</button>
-
-    <a
-      [routerLink]="['/characters/edit', character.id]"
-      routerLinkActive="active"
-      >Edit {{ character.name }}</a
-    >
+    <button mat-raised-button color="primary" (click)="goBack()">
+      Go back
+    </button>
+    <button mat-raised-button color="accent">
+      <a
+        [routerLink]="['/characters/edit', character.id]"
+        routerLinkActive="active"
+        >Edit {{ character.name }}</a
+      >
+    </button>
   </div>
 </section>

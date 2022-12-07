@@ -5198,6 +5198,7 @@
       "url": "https://api.disneyapi.dev/characters/6768"
     },
     {
+      "name": "Tinker Bell",
       "films": [
         "Peter Pan (film)",
         "Return to Never Land",
@@ -5249,6 +5250,13 @@
         "Disney Magical Dice",
         "Disney Sorcerer's Arena"
       ],
+      "allies": [
+        ""
+      ],
+      "enemies": [
+        "Wendy"
+      ],
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Profile_-_Tinker_Bell.jpeg",
       "parkAttractions": [
         "Jubilation!",
         "Peter Pan's Flight",
@@ -5270,12 +5278,7 @@
         "Paint the Night Parade",
         "Soarin' Around the World"
       ],
-      "allies": [],
-      "enemies": [],
-      "id": 6776,
-      "name": "Tinker Bell",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Profile_-_Tinker_Bell.jpeg",
-      "url": "https://api.disneyapi.dev/characters/6776"
+      "id": 6776
     },
     {
       "films": [
@@ -5599,6 +5602,7 @@
       "id": 7476
     },
     {
+      "name": "Blanca",
       "films": [
         "Blanca",
         "Blanca"
@@ -5616,10 +5620,6 @@
         "Blanca",
         "Blanca"
       ],
-      "parkAttractions": [
-        "Blanca",
-        "Blanca"
-      ],
       "allies": [
         "Blanca",
         "Blanca",
@@ -5630,9 +5630,12 @@
         "Blanca",
         "Blanca"
       ],
-      "id": 7477,
-      "name": "Blanca",
-      "imageUrl": "data:image/jpeg;base64,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"
+      "imageUrl": "data:image/jpeg;base64,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",
+      "parkAttractions": [
+        "Blanca",
+        "Blanca"
+      ],
+      "id": 7477
     },
     {
       "films": [

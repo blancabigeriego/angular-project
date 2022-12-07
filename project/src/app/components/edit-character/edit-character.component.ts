@@ -80,7 +80,7 @@ export class EditCharacterComponent implements OnInit {
     //this.character$ = this.store.select(selectCharacter);
     this.store.dispatch(loadingCharacter({ id: this.id}));
     
-    //This breaks the edit
+    
     this.store.select(selectCharacter).subscribe((character)=>{
       if(character){
         this.editForm.patchValue({
