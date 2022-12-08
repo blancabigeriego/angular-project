@@ -1,19 +1,30 @@
 {
   "films": [
     {
+      "name": "Abdullah",
       "films": [
         "Cheetah"
       ],
-      "shortFilms": [],
-      "tvShows": [],
-      "videoGames": [],
-      "parkAttractions": [],
-      "allies": [],
-      "enemies": [],
-      "id": 16,
-      "name": "Abdullah",
+      "shortFilms": [
+        ""
+      ],
+      "tvShows": [
+        ""
+      ],
+      "videoGames": [
+        ""
+      ],
+      "allies": [
+        ""
+      ],
+      "enemies": [
+        ""
+      ],
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cb/1087603-44532-clp-950.jpg",
-      "url": "https://api.disneyapi.dev/characters/16"
+      "parkAttractions": [
+        ""
+      ],
+      "id": 16
     },
     {
       "name": "Abis Mal's Thugs",
@@ -3204,12 +3215,15 @@
       "url": "https://api.disneyapi.dev/characters/4458"
     },
     {
+      "name": "Merlin",
       "films": [
         "The Sword in the Stone",
         "Mickey's Magical Christmas: Snowed in at the House of Mouse",
         "Mickey's House of Villains"
       ],
-      "shortFilms": [],
+      "shortFilms": [
+        ""
+      ],
       "tvShows": [
         "House of Mouse",
         "Once Upon a Time",
@@ -3227,17 +3241,19 @@
         "Disney Sorcerer's Arena",
         "Disney Tsum Tsum (game)"
       ],
+      "allies": [
+        ""
+      ],
+      "enemies": [
+        ""
+      ],
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/ee/Merlin_Sword_in_the_Stone.jpeg",
       "parkAttractions": [
         "Sword in the Stone (attraction)",
         "Sorcerers of the Magic Kingdom",
         "Magic Happens"
       ],
-      "allies": [],
-      "enemies": [],
-      "id": 4484,
-      "name": "Merlin",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/ee/Merlin_Sword_in_the_Stone.jpeg",
-      "url": "https://api.disneyapi.dev/characters/4484"
+      "id": 4484
     },
     {
       "films": [

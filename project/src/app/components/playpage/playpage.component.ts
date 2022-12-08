@@ -86,8 +86,10 @@ export class PlaypageComponent implements OnInit {
     );
 
     this.createCharacterSuccess$.subscribe((success) => {
-      success: alert('Well done!! You have created your own Character!');
-      this.router.navigate(['/characters']);
+      if(success){
+        alert('Well done!! You have created your own Character!');
+        this.router.navigate(['/characters']);
+      }
     });
   }
 }
