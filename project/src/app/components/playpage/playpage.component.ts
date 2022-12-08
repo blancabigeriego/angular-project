@@ -34,15 +34,15 @@ export class PlaypageComponent implements OnInit {
 
   constructor(private store: Store<AppState>, private router: Router) {
     this.createCharacterSuccess$ = new Observable();
-    this.nameInput = new FormControl('', [Validators.required]);
+    this.nameInput = new FormControl('', [Validators.required, Validators.minLength(2)]);
     this.filmsInput = new FormControl([], [Validators.required]);
-    this.shortFilmsInput = new FormControl([]);
-    this.tvShowsInput = new FormControl([]);
+    this.shortFilmsInput = new FormControl([], [Validators.required]);
+    this.tvShowsInput = new FormControl([], [Validators.required]);
     this.videoGamesInput = new FormControl([], [Validators.required]);
     this.parkAttractionsInput = new FormControl([], [Validators.required]);
-    this.alliesInput = new FormControl([], [Validators.required]);
+    this.alliesInput = new FormControl([],[Validators.required, Validators.minLength(2)]);
     this.enemiesInput = new FormControl([]);
-    this.imageInput = new FormControl('', [Validators.required]);
+    this.imageInput = new FormControl('', [Validators.required, Validators.pattern('[^\\s]+(.*?)\\.(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF)$')]);
 
     this.createForm = new FormGroup({
       name: this.nameInput,
@@ -93,3 +93,5 @@ export class PlaypageComponent implements OnInit {
     });
   }
 }
+
+

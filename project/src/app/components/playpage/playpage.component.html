@@ -19,6 +19,7 @@
         [formControl]="nameInput"
         name="name"
       />
+      <mat-error>Your name should be at least 2 letters long!</mat-error>
     </mat-form-field>
     <mat-form-field>
       <mat-label for="films"
@@ -89,6 +90,7 @@
         [formControl]="parkAttractionsInput"
         name="parkAttractions"
       ></textarea>
+      <mat-error>You should be in a Park Attraction!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -103,6 +105,7 @@
         [formControl]="alliesInput"
         name="allies"
       ></textarea>
+      <mat-error>You should add some friends!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -129,6 +132,7 @@
         [formControl]="imageInput"
         name="image"
       />
+      <mat-error>The URL must end in jpg,jpeg,png or gif</mat-error>
     </mat-form-field>
     <button
       mat-fab
