@@ -33,6 +33,7 @@
         [formControl]="filmsInput"
         name="films"
       ></textarea>
+      <mat-error>You must enter a film!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -48,6 +49,7 @@
         name="shortFilms"
       >
       </textarea>
+      <mat-error>You must enter a short film!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -62,6 +64,7 @@
         [formControl]="tvShowsInput"
         name="tvShows"
       ></textarea>
+      <mat-error>You must enter a TV Show!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -76,6 +79,7 @@
         [formControl]="videoGamesInput"
         name="videogames"
       ></textarea>
+      <mat-error>You must enter a video game!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -132,7 +136,7 @@
         [formControl]="imageInput"
         name="image"
       />
-      <mat-error>The URL must end in jpg,jpeg,png or gif</mat-error>
+      <mat-error>Please enter a correct URL!!</mat-error>
     </mat-form-field>
     <button
       mat-fab

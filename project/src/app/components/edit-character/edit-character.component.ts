@@ -47,13 +47,13 @@ export class EditCharacterComponent implements OnInit {
     this.character$ = new Observable <Character>();
     this.deleteCharacterSuccess$ = new Observable();
     this.editCharacterSuccess$ = new Observable();
-    this.nameInput = new FormControl('', [Validators.required]);
+    this.nameInput = new FormControl('', [Validators.required, Validators.minLength(2)]);
     this.filmsInput = new FormControl([], [Validators.required]);
     this.shortFilmsInput = new FormControl([]);
     this.tvShowsInput = new FormControl([]);
     this.videoGamesInput = new FormControl([], [Validators.required]);
     this.parkAttractionsInput = new FormControl([], [Validators.required]);
-    this.alliesInput = new FormControl([], [Validators.required]);
+    this.alliesInput = new FormControl([], [Validators.required, Validators.minLength(2)]);
     this.enemiesInput = new FormControl([]);
     this.imageInput = new FormControl('', [Validators.required]);
     this.id = 0;
