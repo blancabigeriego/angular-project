@@ -1,0 +1,35 @@
+.home{
+
+background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+}
+.title{
+   text-align: center;
+   margin: 0px 0px 30px;
+   font-size: 3rem;
+   letter-spacing: .6rem;
+   padding: 70px;
+   text-shadow: 0 0 0.2em rgb(255, 119, 250), 0 0 0.3em rgb(241, 119, 255),0 0 0.4em rgb(255, 119, 248);
+}
+.char-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 2px;
+   
+}
+mat-card{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+mat-card:hover{
+    cursor: pointer;
+    background-color:rgba(0, 255, 94, 0.386);
+    height: 81%;
+}
+.name{
+    font-size: 1rem;
+}
