@@ -3,92 +3,129 @@
 <section class="edit">
   <h2>Edit Character:</h2>
   <form (ngSubmit)="editCharacter()" [formGroup]="editForm">
-    <label for="name">Character's new name:</label>
-    <textarea
-      name="name"
-      placeholder="New name.."
-      [formControl]="nameInput"
-    ></textarea>
-    <label for="films"
-      >Character's new films: (If more than one write each one in a new
-      line)</label
-    >
-    <textarea
-      name="films"
-      placeholder="First film...\n Second film...\n Third film..."
-      [formControl]="filmsInput"
-      name="films"
-    ></textarea>
-    <label for="shortFilms"
-      >Character's new shortfilms:(If more than one write each one in a new
-      Line)</label
-    >
-    <textarea
-      name="shortFilms"
-      placeholder="Short films here...\n More films..."
-      [formControl]="shortFilmsInput"
-      name="shortFilms"
-    ></textarea>
-    <label for="tvShows"
-      >Character's new TV Shows:(If more than one write each one in a new
-      Line)</label
-    >
-    <textarea
-      placeholder="TV Shows here...\n More TV shows..."
-      [formControl]="tvShowsInput"
-      name="tvShows"
-    ></textarea>
-    <label for="videogames"
-      >New videogames(If more than one write each one in a new Line)</label
-    >
-    <textarea
-      type="text"
-      placeholder="Video Games here...\n More Video Games..."
-      [formControl]="videoGamesInput"
-      name="videogames"
-    ></textarea>
-    <label for="parkAttractions"
-      >Character's new attractions(If more than one write each one in a new
-      Line)</label
-    >
-    <textarea
-      type="text"
-      placeholder="Park Attractions here...\n More Park Attractions..."
-      [formControl]="parkAttractionsInput"
-      name="parkAttractions"
-    ></textarea>
-    <label for="allies"
-      >Who are the character's new friends?(If more than one write each one in a
-      new Line)</label
-    >
-    <textarea
-      type="text"
-      placeholder="Friends here...\n More friends..."
-      [formControl]="alliesInput"
-      name="allies"
-    ></textarea>
-    <label for="enemies"
-      >Who are the character's new enemies?(If he/she has any)</label
-    >
-    <textarea
-      type="text"
-      placeholder="Enemies here...\nMore enemies..."
-      [formControl]="enemiesInput"
-      name="enemies"
-    ></textarea>
-    <label for="image"
-      >Can you give us the URL of the character's new picture???</label
-    >
-    <textarea
-      type="text"
-      placeholder="Picture URL here..."
-      [formControl]="imageInput"
-      name="image"
-    ></textarea>
+    <mat-form-field>
+      <mat-label for="name">Character's new name:</mat-label>
+      <input
+        type="text"
+        matInput
+        name="name"
+        placeholder="New name.."
+        [formControl]="nameInput"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="films"
+        >Character's new films: (If more than one write each one in a new
+        line)</mat-label
+      >
+      <textarea
+        matInput
+        name="films"
+        placeholder="First film...\n Second film...\n Third film..."
+        [formControl]="filmsInput"
+        name="films"
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="shortFilms"
+        >Character's new shortfilms:(If more than one write each one in a new
+        Line)</mat-label
+      >
+      <textarea
+        matInput
+        name="shortFilms"
+        placeholder="Short films here...\n More films..."
+        [formControl]="shortFilmsInput"
+        name="shortFilms"
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="tvShows"
+        >Character's new TV Shows:(If more than one write each one in a new
+        Line)</mat-label
+      >
+      <textarea
+        matInput
+        placeholder="TV Shows here...\n More TV shows..."
+        [formControl]="tvShowsInput"
+        name="tvShows"
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="videogames"
+        >New videogames(If more than one write each one in a new
+        Line)</mat-label
+      >
+      <textarea
+        matInput
+        type="text"
+        placeholder="Video Games here...\n More Video Games..."
+        [formControl]="videoGamesInput"
+        name="videogames"
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="parkAttractions"
+        >Character's new attractions(If more than one write each one in a new
+        Line)</mat-label
+      >
+      <textarea
+        matInput
+        type="text"
+        placeholder="Park Attractions here...\n More Park Attractions..."
+        [formControl]="parkAttractionsInput"
+        name="parkAttractions"
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="allies"
+        >Who are the character's new friends?(If more than one write each one in
+        a new Line)</mat-label
+      >
+      <textarea
+        matInput
+        type="text"
+        placeholder="Friends here...\n More friends..."
+        [formControl]="alliesInput"
+        name="allies"
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="enemies"
+        >Who are the character's new enemies?(If he/she has any)</mat-label
+      >
+      <textarea
+        matInput
+        type="text"
+        placeholder="Enemies here...\nMore enemies..."
+        [formControl]="enemiesInput"
+        name="enemies"
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="image"
+        >Can you give us the URL of the character's new picture???</mat-label
+      >
+      <textarea
+        matInput
+        type="text"
+        placeholder="Picture URL here..."
+        [formControl]="imageInput"
+        name="image"
+      ></textarea>
+    </mat-form-field>
 
-    <button type="submit">Update</button>
-    <button type="button" (click)="deleteCharacter()">
-      Delete this character
-    </button>
+    <div class="btns-container">
+      <button mat-fab extended type="submit" color="accent">Update</button>
+      <button
+        mat-fab
+        extended
+        color="warn"
+        type="button"
+        (click)="deleteCharacter()"
+      >
+        Delete this character
+      </button>
+    </div>
   </form>
 </section>

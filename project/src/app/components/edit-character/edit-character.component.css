@@ -1,20 +1,31 @@
 .edit{
     display: flex;
-    gap: 100px;
-
-}
-
-.edit form{
-    display: flex;
-    flex-direction: column;
-}
-
-.btns{
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
     align-items: center;
-    padding: 10px;
-    
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+.edit h2{
+margin: 200px 100px 100px 100px;
+ font-size: 3rem;
+ color: #FF4081;
+ text-shadow: 0 0 0.2em rgb(255, 119, 250), 0 0 0.3em rgb(241, 119, 255),0 0 0.4em rgb(255, 119, 248);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+mat-form-field textarea{
+    resize: none;
+}
+.btns-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+button{
+    width: 30%;
 }
