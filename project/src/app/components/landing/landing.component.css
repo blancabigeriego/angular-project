@@ -1,21 +1,33 @@
 .landing{
     height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIzjEJLLHMtCFvmWTOXcw4IjoQYr8LU_l3A&usqp=CAU");
+    background-position: center; 
+    
+  
 }
 .header{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding-top: 100px;
 }
 .header img{
-    width: 10%;
+    width: 25%;
+}
+.header h1{
+    font-size: 3rem;
 }
 .container{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-top: 50px;    
 }
 .container img{
-    width: 50%;
+    width: 30%;
+    border: 3px dotted pink;
     border-radius: 10px;
 }
 .text-container{
@@ -24,20 +36,24 @@
     align-items: center;
     margin: 30px;
     gap: 30px;
+    width: 30%;
 
 }
 
-.text-container p{
-
+.text{
     padding: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
 }
 
 .text-container button{
-    padding: 20px;
-    font-size: 2rem;
+    padding: 50px;
+    font-size: 1.6rem;
     border: none;
-    color: white;
-    background-color: aquamarine;
-
+    box-shadow:  15px 15px 2px 1px rgba(122, 227, 227, 0.445);
+}
+button a{
+    text-decoration: none;
+    color:rgba(122, 227, 227, 0.99);
 }

@@ -1,19 +1,21 @@
-<mat-card class="landing">
-  <mat-card-header class="header">
+<div class="landing">
+  <header class="header">
     <img matCardLgImage src="../assets/Disney_wordmark.svg" alt="disney-logo" />
     <h1>WELCOME TO DISNEYLAND</h1>
-  </mat-card-header>
+  </header>
   <mat-card-content class="container">
     <img
       src="../assets/personajes-disney-10761.jpg"
       alt="disney-characters-pic"
     />
     <div class="text-container">
-      <mat-card-subtitle>
+      <mat-card-subtitle class="text">
         Get to know the Disney characters, choose your favourites and become the
         hero of your favourite Disney film.
       </mat-card-subtitle>
-      <a routerLink="characters">Get started!</a>
+      <button mat-raised-button color="accent">
+        <a routerLink="characters">Get started!</a>
+      </button>
     </div>
   </mat-card-content>
-</mat-card>
+</div>
