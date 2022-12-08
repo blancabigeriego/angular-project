@@ -1,101 +1,143 @@
 <app-navbar></app-navbar>
-<section>
-  <div>
-    <h2>Become the Main Character!</h2>
-    <form (ngSubmit)="createCharacter()" [formGroup]="createForm">
-      <label for="name">What is your name?</label>
-      <textarea
+<section class="play-page">
+  <h2 class="title">Become the Main Character!</h2>
+
+  <form
+    class="form"
+    appereance="fill"
+    floatLabel="always"
+    (ngSubmit)="createCharacter()"
+    [formGroup]="createForm"
+  >
+    <mat-form-field>
+      <mat-label for="name">What is your name?</mat-label>
+      <input
+        matInput
+        matNativeControl
         type="text"
         placeholder="Name here..."
         [formControl]="nameInput"
         name="name"
-      ></textarea>
-
-      <label for="films"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="films"
         >In what films would you like to appear?(If more than one write each one
-        in a new Line)</label
+        in a new Line)</mat-label
       >
       <textarea
+        matInput
         type="text"
-        placeholder="First film...\n Second film...\n Third film..."
+        placeholder="First film...&#10;Second film...&#10;Third film..."
         [formControl]="filmsInput"
         name="films"
       ></textarea>
+    </mat-form-field>
 
-      <label for="shortFilms"
+    <mat-form-field>
+      <mat-label for="shortFilms"
         >Would you like to be in any short films?(If more than one write each
-        one in a new Line)</label
+        one in a new Line)</mat-label
       >
       <textarea
+        matInput
         type="text"
-        placeholder="Short films here..."
+        placeholder="First short film...&#10;Second short film...&#10;Third short film..."
         [formControl]="shortFilmsInput"
         name="shortFilms"
       >
       </textarea>
+    </mat-form-field>
 
-      <label for="tvShows"
+    <mat-form-field>
+      <mat-label for="tvShows"
         >Would you like to be in any TV shows?(If more than one write each one
-        in a new Line)</label
+        in a new Line)</mat-label
       >
       <textarea
+        matInput
         type="text"
-        placeholder="TV Shows here..."
+        placeholder="First TV Show...&#10;Second TV Show...&#10;Third TV Show..."
         [formControl]="tvShowsInput"
         name="tvShows"
       ></textarea>
+    </mat-form-field>
 
-      <label for="videogames"
+    <mat-form-field>
+      <mat-label for="videogames"
         >In what videogames do you appear??(If more than one write each one in a
-        new Line)</label
+        new Line)</mat-label
       >
       <textarea
+        matInput
         type="text"
-        placeholder="Video Games here..."
+        placeholder="First video game...&#10;Second video game...&#10;Third video game..."
         [formControl]="videoGamesInput"
         name="videogames"
       ></textarea>
+    </mat-form-field>
 
-      <label for="parkAttractions"
+    <mat-form-field>
+      <mat-label for="parkAttractions"
         >Where can we find you in the park?(If more than one write each one in a
-        new Line)</label
+        new Line)</mat-label
       >
       <textarea
+        matInput
         type="text"
-        placeholder="Park Attractions here..."
+        placeholder="First park attraction...&#10;Second park attraction...&#10;Third park attraction..."
         [formControl]="parkAttractionsInput"
         name="parkAttractions"
       ></textarea>
+    </mat-form-field>
 
-      <label for="allies"
+    <mat-form-field>
+      <mat-label for="allies"
         >Who are your best Disney Friends?(If more than one write each one in a
-        new Line)</label
+        new Line)</mat-label
       >
       <textarea
+        matInput
         type="text"
-        placeholder="Friends here..."
+        placeholder="First friend here...&#10;Second friend here...&#10;Third friend here..."
         [formControl]="alliesInput"
         name="allies"
       ></textarea>
+    </mat-form-field>
 
-      <label for="enemies">Who are your enemies?(If you have any)</label>
+    <mat-form-field>
+      <mat-label for="enemies"
+        >Who are your enemies?(If you have any)</mat-label
+      >
       <textarea
+        matInput
         type="text"
-        placeholder="Enemies here..."
+        placeholder="First enemy here...&#10;Second enemy here...&#10;Third enemy here..."
         [formControl]="enemiesInput"
         name="enemies"
       ></textarea>
+    </mat-form-field>
 
-      <label for="image">Can you give us the URL of your picture???</label>
-      <textarea
+    <mat-form-field>
+      <mat-label for="image"
+        >Can you give us the URL of your picture???</mat-label
+      >
+      <input
+        matInput
         type="text"
         placeholder="Picture URL here..."
         [formControl]="imageInput"
         name="image"
-      ></textarea>
-      <button type="submit" [disabled]="createForm.invalid">
-        Welcome to Disney
-      </button>
-    </form>
-  </div>
+      />
+    </mat-form-field>
+    <button
+      mat-fab
+      extended
+      type="submit"
+      color="accent"
+      [disabled]="createForm.invalid"
+    >
+      Welcome to Disney
+    </button>
+  </form>
 </section>

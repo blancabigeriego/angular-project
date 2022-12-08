@@ -1,13 +1,25 @@
 <app-navbar></app-navbar>
-<h1>Our heroes and villans:</h1>
-<section>
-  <div *ngIf="loading$ | async">Even miracles take a little time!</div>
-  <div *ngIf="!(loading$ | async)">
-    <section *ngFor="let character of characters$ | async">
-      <a [routerLink]="['/characters', character.id]">
-        <h2>{{ character.name }}</h2>
-        <img src="{{ character.imageUrl }}" alt="{{ character.name }}" />
-      </a>
-    </section>
-  </div>
+<section class="home">
+  <h1 class="title">Our heroes and villans:</h1>
+  <section>
+    <div *ngIf="loading$ | async">Even miracles take a little time!</div>
+    <mat-grid-list
+      cols="2"
+      rowHeight="2:1"
+      gutterSize="0rem"
+      *ngIf="!(loading$ | async)"
+    >
+      <mat-grid-tile *ngFor="let character of characters$ | async">
+        <mat-card [routerLink]="['/characters', character.id]">
+          <mat-card-header class="name">{{ character.name }}</mat-card-header>
+          <mat-card-content
+            ><img
+              class="char-img"
+              src="{{ character.imageUrl }}"
+              alt="{{ character.name }}"
+          /></mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
 </section>

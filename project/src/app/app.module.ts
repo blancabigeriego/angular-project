@@ -20,6 +20,13 @@ import { EditCharacterComponent } from './components/edit-character/edit-charact
 import { EditCharacterEffects } from './state/effects/edit-character.effect';
 import { CreateCharacterEffects } from './state/effects/create-character.effect';
 import { deleteCharacterEffect } from './state/effects/delete-character.effect';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -38,7 +45,15 @@ import { deleteCharacterEffect } from './state/effects/delete-character.effect';
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects, deleteCharacterEffect ])
+    EffectsModule.forRoot([CharactersEffects,CharacterDetailsEffect,CreateCharacterEffects, EditCharacterEffects, deleteCharacterEffect ]),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatGridListModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

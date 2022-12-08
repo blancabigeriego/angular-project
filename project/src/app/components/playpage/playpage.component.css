@@ -1,3 +1,23 @@
-form textarea{
+mat-form-field textarea{
     resize: none;
+}
+.play-page{
+background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.title{
+ margin: 200px 100px 100px 100px;
+ font-size: 3rem;
+ color: #FF4081;
+ text-shadow: 0 0 0.2em rgb(255, 119, 250), 0 0 0.3em rgb(241, 119, 255),0 0 0.4em rgb(255, 119, 248);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }

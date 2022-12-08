@@ -1,35 +1,50 @@
 <app-navbar></app-navbar>
-<section>
-  <div *ngIf="character$ | async as character">
-    <h2>{{ character.name }}</h2>
-    <img src="{{ character.imageUrl }}" alt="{{ character.name }}" />
-    <p>You can find me in {{ character.films }}</p>
-    <p *ngIf="character.shortFilms.length !== 0">
-      Or in shorter films like: {{ character.shortFilms }}
-    </p>
-    <p *ngIf="character.tvShows.length !== 0">
-      I'm also on Tv in: {{ character.parkAttractions }}
-    </p>
-    <p *ngIf="character.parkAttractions.length !== 0">
-      Or in my favourite park attractions {{ character.parkAttractions }}
-    </p>
+<section class="play-page">
+  <mat-card class="card" *ngIf="character$ | async as character">
+    <mat-card-header class="header">{{ character.name }}</mat-card-header>
 
-    <p *ngIf="character.videoGames.length !== 0">
-      You can also play with me in {{ character.videoGames }}
-    </p>
-    <p *ngIf="character.allies.length !== 0">
-      My friends are: {{ character.allies }}
-    </p>
-    <p *ngIf="character.enemies.length !== 0">
-      My enemies are: {{ character.enemies }}
-    </p>
+    <img
+      class="img"
+      mat-card-xl-image
+      src="{{ character.imageUrl }}"
+      alt="{{ character.name }}"
+    />
+    <mat-card-content class="content">
+      <p>You can <strong>find me in</strong> {{ character.films }}</p>
+      <p *ngIf="character.shortFilms.length !== 0">
+        Or in <strong>shorter films</strong> like: {{ character.shortFilms }}
+      </p>
+      <p *ngIf="character.tvShows.length !== 0">
+        I'm also <strong>on Tv</strong> in: {{ character.parkAttractions }}
+      </p>
+      <p *ngIf="character.parkAttractions.length !== 0">
+        Or in my favourite <strong>park attractions</strong>
+        {{ character.parkAttractions }}
+      </p>
 
-    <button (click)="goBack()">Go back</button>
+      <p *ngIf="character.videoGames.length !== 0">
+        You can also <strong>play</strong> with me in {{ character.videoGames }}
+      </p>
+      <p *ngIf="character.allies.length !== 0">
+        My <strong>friends</strong> are: {{ character.allies }}
+      </p>
+      <p *ngIf="character.enemies.length !== 0">
+        My <strong>enemies</strong> are: {{ character.enemies }}
+      </p>
+    </mat-card-content>
 
-    <a
-      [routerLink]="['/characters/edit', character.id]"
-      routerLinkActive="active"
-      >Edit {{ character.name }}</a
-    >
-  </div>
+    <mat-card-actions class="btns">
+      <button mat-raised-button color="primary" (click)="goBack()">
+        Go back
+      </button>
+      <button
+        mat-raised-button
+        color="accent"
+        [routerLink]="['/characters/edit', character.id]"
+        routerLinkActive="active"
+      >
+        Edit {{ character.name }}
+      </button>
+    </mat-card-actions>
+  </mat-card>
 </section>

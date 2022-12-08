@@ -29,6 +29,7 @@ export class CharacterDetailsComponent implements OnInit {
 ngOnInit(): void {
   this.id = this.route.snapshot.params['id'];
   this.character$ = this.store.select(selectCharacter);
+  
   // this.character$.subscribe({
   //   next: (data) => {
   //     console.log(data)
