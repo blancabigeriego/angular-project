@@ -1,6 +1,7 @@
 <app-navbar></app-navbar>
-<h2>Edit Character:</h2>
+
 <section class="edit">
+  <h2>Edit Character:</h2>
   <form (ngSubmit)="editCharacter()" [formGroup]="editForm">
     <label for="name">Character's new name:</label>
     <textarea
