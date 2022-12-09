@@ -5,25 +5,13 @@
       "films": [
         "Cheetah"
       ],
-      "shortFilms": [
-        ""
-      ],
-      "tvShows": [
-        ""
-      ],
-      "videoGames": [
-        ""
-      ],
-      "allies": [
-        ""
-      ],
-      "enemies": [
-        ""
-      ],
+      "shortFilms": [],
+      "tvShows": [],
+      "videoGames": [],
+      "allies": [],
+      "enemies": [],
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cb/1087603-44532-clp-950.jpg",
-      "parkAttractions": [
-        ""
-      ],
+      "parkAttractions": [],
       "id": 16
     },
     {
@@ -32,25 +20,15 @@
         "The Return of Jafar",
         "Aladdin and the King of Thieves"
       ],
-      "shortFilms": [
-        ""
-      ],
+      "shortFilms": [],
       "tvShows": [
         "Aladdin (TV series)"
       ],
-      "videoGames": [
-        ""
-      ],
-      "allies": [
-        ""
-      ],
-      "enemies": [
-        ""
-      ],
+      "videoGames": [],
+      "allies": [],
+      "enemies": [],
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/ba/Abis_Mal%27s_Thugs.jpg",
-      "parkAttractions": [
-        ""
-      ],
+      "parkAttractions": [],
       "id": 21
     },
     {
@@ -5275,9 +5253,7 @@
         "Disney Magical Dice",
         "Disney Sorcerer's Arena"
       ],
-      "allies": [
-        ""
-      ],
+      "allies": [],
       "enemies": [
         "Wendy"
       ],
@@ -5627,8 +5603,9 @@
       "id": 7478
     },
     {
+      "name": "Blanca Bigeriego Tejerina",
       "films": [
-        "q"
+        "Blanca the film"
       ],
       "shortFilms": [
         "q"
@@ -5639,18 +5616,17 @@
       "videoGames": [
         "q"
       ],
-      "parkAttractions": [
-        "q"
-      ],
       "allies": [
         "qq"
       ],
       "enemies": [
         ""
       ],
-      "id": 7479,
-      "name": "Blanca Bigeriego Tejerina",
-      "imageUrl": "http://placekitten.com/g/200/300"
+      "imageUrl": "http://placekitten.com/g/200/300",
+      "parkAttractions": [
+        "q"
+      ],
+      "id": 7479
     }
   ]
 }

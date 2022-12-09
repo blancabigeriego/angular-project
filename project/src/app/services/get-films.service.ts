@@ -1,33 +1,32 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Character } from '../models/character.model';
-import { delay, Observable } from 'rxjs';
-import { deleteCharacter } from '../state/actions/delete-character.action';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Character } from "../models/character.model";
+import { delay, Observable } from "rxjs";
+import { deleteCharacter } from "../state/actions/delete-character.action";
+import { ObserversModule } from "@angular/cdk/observers";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class GetFilmsService {
-
-  readonly BASE_URL = 'http://localhost:8000/films';
-  constructor(private http: HttpClient) { }
+  readonly BASE_URL = "http://localhost:8000/films";
+  constructor(private http: HttpClient) {}
 
   getCharacters(): Observable<Character[]> {
-    return this.http.get<Character[]>(`${this.BASE_URL}`).pipe(delay(1500));
+    return this.http.get<Character[]>(`${this.BASE_URL}`);
   }
 
   getCharacterById(id: number): Observable<Character> {
-    
     return this.http.get<Character>(`${this.BASE_URL}/${id}`);
   }
 
   createCharacter(character: Character): Observable<Character> {
-    return this.http.post<Character>(`${this.BASE_URL}`, character)
+    return this.http.post<Character>(`${this.BASE_URL}`, character);
   }
 
-  editCharacter(character: Character): Observable<Character>{
-    console.log(character)
-    const body ={
+  editCharacter(character: Character): Observable<Character> {
+    console.log(character);
+    const body = {
       //id: character.id,
       name: character.name,
       films: character.films,
@@ -37,18 +36,12 @@ export class GetFilmsService {
       allies: character.allies,
       enemies: character.enemies,
       imageUrl: character.imageUrl,
-      parkAttractions: character.parkAttractions
-
-    }
-    return this.http.put<Character>(`${this.BASE_URL}/${character.id}`, body)
+      parkAttractions: character.parkAttractions,
+    };
+    return this.http.put<Character>(`${this.BASE_URL}/${character.id}`, body);
   }
 
-
-  //I dont know if this is right?
-  deleteCharacter(id: number): Observable<Character>{
-    
-     return this.http.delete<Character>(`${this.BASE_URL}/${id}`)
+  deleteCharacter(id: number): Observable<Character> {
+    return this.http.delete<Character>(`${this.BASE_URL}/${id}`);
   }
-
-  
 }
