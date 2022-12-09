@@ -6,20 +6,37 @@
 
 
 }
-img{
-    height: 100%;
+.logo-disney{
+    height: 80%;
+    
 }
 .nav-container{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    gap: 30px;
+    gap: 80px;
+    height: 100%;
 
+}
+
+.nav-container li{
+    display: flex;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}
+.icon-disney{
+    width: 39px;
+    
+}
+.icon-smile{
+    width: 25px;
 }
 
 .nav-container li a{
     text-decoration: none;
     color: white;
+    
 }
 .nav-container li a:hover{
     font-size: larger;

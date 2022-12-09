@@ -1,9 +1,21 @@
 <mat-toolbar color="accent" class="header">
-  <img src="assets/disney-logo.png" alt="disney-logo" />
+  <img class="logo-disney" src="assets/Disney_wordmark.svg" alt="disney-logo" />
   <nav>
     <ul class="nav-container">
-      <li><a routerLink="/characters" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/play" routerLinkActive="active">Let's Play!</a></li>
+      <li>
+        <img
+          class="icon-disney"
+          src="assets/disney-logo.png"
+          alt="castle-icon"
+        /><a routerLink="/characters" routerLinkActive="active">Home</a>
+      </li>
+      <li>
+        <img class="icon-smile" src="assets/smile.png" alt="castle-icon" /><a
+          routerLink="/play"
+          routerLinkActive="active"
+          >Let's Play!</a
+        >
+      </li>
     </ul>
   </nav>
 </mat-toolbar>
