@@ -55,7 +55,7 @@ export class EditCharacterComponent implements OnInit {
     this.parkAttractionsInput = new FormControl([], [Validators.required]);
     this.alliesInput = new FormControl([], [Validators.required, Validators.minLength(2)]);
     this.enemiesInput = new FormControl([]);
-    this.imageInput = new FormControl('', [Validators.required]);
+    this.imageInput = new FormControl('', [Validators.required, Validators.pattern(/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/)]);
     this.id = 0;
     
 
