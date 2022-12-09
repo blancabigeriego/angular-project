@@ -12,6 +12,10 @@
         placeholder="New name.."
         [formControl]="nameInput"
       />
+      <mat-error
+        >Your name should be at least 2 letters long and NOT INCLUDE SWEAR
+        WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="films"
@@ -21,10 +25,11 @@
       <textarea
         matInput
         name="films"
-        placeholder="First film...\n Second film...\n Third film..."
+        placeholder="First enemy here...&#10;Second enemy here...&#10;Third enemy here..."
         [formControl]="filmsInput"
         name="films"
       ></textarea>
+      <mat-error>You must enter a film and NOT INCLUDE SWEAR WORDS!!</mat-error>
     </mat-form-field>
     <mat-form-field>
       <mat-label for="shortFilms"
@@ -34,10 +39,13 @@
       <textarea
         matInput
         name="shortFilms"
-        placeholder="Short films here...\n More films..."
+        placeholder="First short film...&#10;Second short film...&#10;Third short film..."
         [formControl]="shortFilmsInput"
         name="shortFilms"
       ></textarea>
+      <mat-error
+        >You must enter a short film and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="tvShows"
@@ -46,10 +54,11 @@
       >
       <textarea
         matInput
-        placeholder="TV Shows here...\n More TV shows..."
+        placeholder="First TV Show...&#10;Second TV Show...&#10;Third TV Show..."
         [formControl]="tvShowsInput"
         name="tvShows"
       ></textarea>
+      <mat-error>You must enter a TV Show!</mat-error>
     </mat-form-field>
     <mat-form-field>
       <mat-label for="videogames"
@@ -59,10 +68,13 @@
       <textarea
         matInput
         type="text"
-        placeholder="Video Games here...\n More Video Games..."
+        placeholder="First video game...&#10;Second video game...&#10;Third video game..."
         [formControl]="videoGamesInput"
         name="videogames"
       ></textarea>
+      <mat-error
+        >You must enter a video game and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="parkAttractions"
@@ -72,10 +84,14 @@
       <textarea
         matInput
         type="text"
-        placeholder="Park Attractions here...\n More Park Attractions..."
+        placeholder="First park attraction...&#10;Second park attraction...&#10;Third park attraction...."
         [formControl]="parkAttractionsInput"
         name="parkAttractions"
       ></textarea>
+      <mat-error
+        >You should be in a Park Attraction and NOT INCLUDE SWEAR
+        WORDS!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="allies"
@@ -85,10 +101,13 @@
       <textarea
         matInput
         type="text"
-        placeholder="Friends here...\n More friends..."
+        placeholder="First friend here...&#10;Second friend here...&#10;Third friend here..."
         [formControl]="alliesInput"
         name="allies"
       ></textarea>
+      <mat-error
+        >You should add some friends and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="enemies"
@@ -97,7 +116,7 @@
       <textarea
         matInput
         type="text"
-        placeholder="Enemies here...\nMore enemies..."
+        placeholder="First enemy here...&#10;Second enemy here...&#10;Third enemy here.."
         [formControl]="enemiesInput"
         name="enemies"
       ></textarea>
@@ -113,10 +132,21 @@
         [formControl]="imageInput"
         name="image"
       ></textarea>
+      <mat-error
+        >Please enter a correct URL and NOT INCLUDE SWEAR WORDS!!!</mat-error
+      >
     </mat-form-field>
 
     <div class="btns-container">
-      <button mat-fab extended type="submit" color="accent">Update</button>
+      <button
+        mat-fab
+        extended
+        type="submit"
+        color="accent"
+        [disabled]="editForm.invalid"
+      >
+        Update
+      </button>
       <button
         mat-fab
         extended

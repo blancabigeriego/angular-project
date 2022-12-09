@@ -13,6 +13,7 @@ import { selectCharacter } from 'src/app/state/selector/character-details.select
 import { deleteCharacterSuccess } from 'src/app/state/actions/delete-character.action';
 import { selectDeleteCharacterSuccess } from 'src/app/state/selector/delete-character.selector';
 import { loadingCharacter } from 'src/app/state/actions/character-details.action';
+import { CustomValidators } from 'src/app/utils/custom-validator';
 
 @Component({
   selector: 'app-edit-character',
@@ -47,15 +48,15 @@ export class EditCharacterComponent implements OnInit {
     this.character$ = new Observable <Character>();
     this.deleteCharacterSuccess$ = new Observable();
     this.editCharacterSuccess$ = new Observable();
-    this.nameInput = new FormControl('', [Validators.required]);
-    this.filmsInput = new FormControl([], [Validators.required]);
-    this.shortFilmsInput = new FormControl([]);
-    this.tvShowsInput = new FormControl([]);
-    this.videoGamesInput = new FormControl([], [Validators.required]);
-    this.parkAttractionsInput = new FormControl([], [Validators.required]);
-    this.alliesInput = new FormControl([], [Validators.required]);
-    this.enemiesInput = new FormControl([]);
-    this.imageInput = new FormControl('', [Validators.required]);
+    this.nameInput = new FormControl('', [Validators.required, Validators.minLength(2), CustomValidators.noCurse]);
+    this.filmsInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.shortFilmsInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.tvShowsInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.videoGamesInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.parkAttractionsInput = new FormControl([], [Validators.required, CustomValidators.noCurse ]);
+    this.alliesInput = new FormControl([], [Validators.required, Validators.minLength(2), CustomValidators.noCurse]);
+    this.enemiesInput = new FormControl([], CustomValidators.noCurse);
+    this.imageInput = new FormControl('', [Validators.required, Validators.pattern(/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/), CustomValidators.noCurse]);
     this.id = 0;
     
 

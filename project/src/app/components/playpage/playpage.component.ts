@@ -12,6 +12,7 @@ import { AppState } from 'src/app/state/app.state';
 import { characterDetailsReducer } from 'src/app/state/reducers/character-details.reducer';
 import { selectCreateCharacterSuccess } from 'src/app/state/selector/create-character.selector';
 import { filter, map } from 'rxjs/operators';
+import { CustomValidators } from 'src/app/utils/custom-validator';
 
 @Component({
   selector: 'app-playpage',
@@ -34,15 +35,15 @@ export class PlaypageComponent implements OnInit {
 
   constructor(private store: Store<AppState>, private router: Router) {
     this.createCharacterSuccess$ = new Observable();
-    this.nameInput = new FormControl('', [Validators.required]);
-    this.filmsInput = new FormControl([], [Validators.required]);
-    this.shortFilmsInput = new FormControl([]);
-    this.tvShowsInput = new FormControl([]);
-    this.videoGamesInput = new FormControl([], [Validators.required]);
-    this.parkAttractionsInput = new FormControl([], [Validators.required]);
-    this.alliesInput = new FormControl([], [Validators.required]);
-    this.enemiesInput = new FormControl([]);
-    this.imageInput = new FormControl('', [Validators.required]);
+    this.nameInput = new FormControl('', [Validators.required, Validators.minLength(2), CustomValidators.noCurse] );
+    this.filmsInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.shortFilmsInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.tvShowsInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.videoGamesInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.parkAttractionsInput = new FormControl([], [Validators.required, CustomValidators.noCurse]);
+    this.alliesInput = new FormControl([], [Validators.required, Validators.minLength(2), CustomValidators.noCurse],);
+    this.enemiesInput = new FormControl([], CustomValidators.noCurse);
+    this.imageInput = new FormControl('', [Validators.required, Validators.pattern(/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/), CustomValidators.noCurse]);
 
     this.createForm = new FormGroup({
       name: this.nameInput,
@@ -93,3 +94,5 @@ export class PlaypageComponent implements OnInit {
     });
   }
 }
+
+

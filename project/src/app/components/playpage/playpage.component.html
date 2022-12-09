@@ -19,6 +19,10 @@
         [formControl]="nameInput"
         name="name"
       />
+      <mat-error
+        >Your name should be at least 2 letters long and NOT INCLUDE SWEAR
+        WORDS!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="films"
@@ -32,6 +36,7 @@
         [formControl]="filmsInput"
         name="films"
       ></textarea>
+      <mat-error>You must enter a film and NOT INCLUDE SWEAR WORDS!!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -47,6 +52,9 @@
         name="shortFilms"
       >
       </textarea>
+      <mat-error
+        >You must enter a short film and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
 
     <mat-form-field>
@@ -61,6 +69,9 @@
         [formControl]="tvShowsInput"
         name="tvShows"
       ></textarea>
+      <mat-error
+        >You must enter a TV Show and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
 
     <mat-form-field>
@@ -75,6 +86,9 @@
         [formControl]="videoGamesInput"
         name="videogames"
       ></textarea>
+      <mat-error
+        >You must enter a video game and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
 
     <mat-form-field>
@@ -89,6 +103,10 @@
         [formControl]="parkAttractionsInput"
         name="parkAttractions"
       ></textarea>
+      <mat-error
+        >You should be in a Park Attraction and NOT INCLUDE SWEAR
+        WORDS!!</mat-error
+      >
     </mat-form-field>
 
     <mat-form-field>
@@ -103,6 +121,9 @@
         [formControl]="alliesInput"
         name="allies"
       ></textarea>
+      <mat-error
+        >You should add some friends and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
 
     <mat-form-field>
@@ -116,6 +137,7 @@
         [formControl]="enemiesInput"
         name="enemies"
       ></textarea>
+      <mat-error>DONT SWEAR AT DISNEY!</mat-error>
     </mat-form-field>
 
     <mat-form-field>
@@ -129,6 +151,9 @@
         [formControl]="imageInput"
         name="image"
       />
+      <mat-error
+        >Please enter a correct URL and NOT INCLUDE SWEAR WORDS!!!</mat-error
+      >
     </mat-form-field>
     <button
       mat-fab
