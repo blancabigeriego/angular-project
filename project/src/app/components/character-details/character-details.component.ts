@@ -25,21 +25,25 @@ export class CharacterDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.params["id"];
-    this.character$ = this.store.select(selectCharacter);
+    try {
+      this.id = this.route.snapshot.params["id"];
+      this.character$ = this.store.select(selectCharacter);
 
-    // this.character$.subscribe({
-    //   next: (data) => {
-    //     console.log(data)
-    //   }
-    // })
-    // this.character$.subscribe(
-    //   (data) => {
-    //     console.log(data)
-    //   }
-    // )`
+      // this.character$.subscribe({
+      //   next: (data) => {
+      //     console.log(data)
+      //   }
+      // })
+      // this.character$.subscribe(
+      //   (data) => {
+      //     console.log(data)
+      //   }
+      // )`
 
-    this.store.dispatch(loadingCharacter({ id: this.id }));
+      this.store.dispatch(loadingCharacter({ id: this.id }));
+    } catch (error) {
+      console.log("Something went wrong", error);
+    }
   }
 
   goBack(): void {
