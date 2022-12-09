@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
-<section class="home">
-  <h1 class="title animate__animated animate__rotateIn">
+<section id="home">
+  <h1 class="animate__animated animate__rotateIn" id="title">
     Our heroes and villans:
   </h1>
   <section>
@@ -14,14 +14,15 @@
       <mat-grid-tile *ngFor="let character of characters$ | async">
         <mat-card [routerLink]="['/characters', character.id]">
           <mat-card-header class="name">{{ character.name }}</mat-card-header>
-          <mat-card-content
-            ><img
-              class="char-img"
-              src="{{ character.imageUrl }}"
-              alt="{{ character.name }}"
-          /></mat-card-content>
+          <img
+            mat-card-image
+            class="char-img"
+            src="{{ character.imageUrl }}"
+            alt="{{ character.name }}"
+          />
         </mat-card>
       </mat-grid-tile>
     </mat-grid-list>
   </section>
+  <a href="#title"><i class="fa-solid fa-arrow-up"></i></a>
 </section>
