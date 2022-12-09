@@ -12,7 +12,10 @@
         placeholder="New name.."
         [formControl]="nameInput"
       />
-      <mat-error>Your name should be at least 2 letters long!</mat-error>
+      <mat-error
+        >Your name should be at least 2 letters long and NOT INCLUDE SWEAR
+        WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="films"
@@ -26,7 +29,7 @@
         [formControl]="filmsInput"
         name="films"
       ></textarea>
-      <mat-error>You must enter a film!</mat-error>
+      <mat-error>You must enter a film and NOT INCLUDE SWEAR WORDS!!</mat-error>
     </mat-form-field>
     <mat-form-field>
       <mat-label for="shortFilms"
@@ -40,7 +43,9 @@
         [formControl]="shortFilmsInput"
         name="shortFilms"
       ></textarea>
-      <mat-error>You must enter a short film!</mat-error>
+      <mat-error
+        >You must enter a short film and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="tvShows"
@@ -67,7 +72,9 @@
         [formControl]="videoGamesInput"
         name="videogames"
       ></textarea>
-      <mat-error>You must enter a video game!</mat-error>
+      <mat-error
+        >You must enter a video game and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="parkAttractions"
@@ -81,7 +88,10 @@
         [formControl]="parkAttractionsInput"
         name="parkAttractions"
       ></textarea>
-      <mat-error>You should be in a Park Attraction!</mat-error>
+      <mat-error
+        >You should be in a Park Attraction and NOT INCLUDE SWEAR
+        WORDS!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="allies"
@@ -95,7 +105,9 @@
         [formControl]="alliesInput"
         name="allies"
       ></textarea>
-      <mat-error>You should add some friends!</mat-error>
+      <mat-error
+        >You should add some friends and NOT INCLUDE SWEAR WORDS!!</mat-error
+      >
     </mat-form-field>
     <mat-form-field>
       <mat-label for="enemies"
@@ -120,7 +132,9 @@
         [formControl]="imageInput"
         name="image"
       ></textarea>
-      <mat-error>Please enter a correct URL!!</mat-error>
+      <mat-error
+        >Please enter a correct URL and NOT INCLUDE SWEAR WORDS!!!</mat-error
+      >
     </mat-form-field>
 
     <div class="btns-container">
