@@ -14,8 +14,6 @@ export class GetFilmsService {
 
   getCharacters(): Observable<Character[]> {
     return this.http.get<Character[]>(`${this.BASE_URL}`);
-
-    //next && error
   }
 
   getCharacterById(id: number): Observable<Character> {
@@ -43,7 +41,6 @@ export class GetFilmsService {
     return this.http.put<Character>(`${this.BASE_URL}/${character.id}`, body);
   }
 
-  //I dont know if this is right?
   deleteCharacter(id: number): Observable<Character> {
     return this.http.delete<Character>(`${this.BASE_URL}/${id}`);
   }

@@ -7,8 +7,7 @@ import {
   loadingCharacters,
 } from "src/app/state/actions/characters.action";
 import { AppState } from "src/app/state/app.state";
-import { GetFilmsService } from "src/app/services/get-films.service";
-import { ThisReceiver } from "@angular/compiler";
+
 import {
   selectCharacters,
   selectLoading,
