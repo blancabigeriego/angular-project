@@ -21,9 +21,7 @@
         "Aladdin and the King of Thieves"
       ],
       "shortFilms": [],
-      "tvShows": [
-        "Aladdin (TV series)"
-      ],
+      "tvShows": ["Aladdin (TV series)"],
       "videoGames": [],
       "allies": [],
       "enemies": [],
@@ -168,9 +166,7 @@
     {
       "films": [],
       "shortFilms": [],
-      "tvShows": [
-        "Hannah Montana"
-      ],
+      "tvShows": ["Hannah Montana"],
       "videoGames": [
         "Hannah Montana (video game)"
       ],
@@ -5620,9 +5616,7 @@
       "allies": [
         "qq"
       ],
-      "enemies": [
-        ""
-      ],
+      "enemies": [],
       "imageUrl": "http://placekitten.com/g/200/300",
       "parkAttractions": [
         "q"
