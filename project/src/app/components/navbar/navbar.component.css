@@ -21,7 +21,7 @@
 
 .nav-container li{
     display: flex;
-    gap:5px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 }
