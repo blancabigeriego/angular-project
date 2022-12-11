@@ -21,7 +21,9 @@
         "Aladdin and the King of Thieves"
       ],
       "shortFilms": [],
-      "tvShows": ["Aladdin (TV series)"],
+      "tvShows": [
+        "Aladdin (TV series)"
+      ],
       "videoGames": [],
       "allies": [],
       "enemies": [],
@@ -166,7 +168,9 @@
     {
       "films": [],
       "shortFilms": [],
-      "tvShows": ["Hannah Montana"],
+      "tvShows": [
+        "Hannah Montana"
+      ],
       "videoGames": [
         "Hannah Montana (video game)"
       ],
@@ -3197,7 +3201,7 @@
         "Mickey's House of Villains"
       ],
       "shortFilms": [
-        ""
+        "Merlin the wizard"
       ],
       "tvShows": [
         "House of Mouse",
@@ -3217,7 +3221,7 @@
         "Disney Tsum Tsum (game)"
       ],
       "allies": [
-        ""
+        "King Arthur"
       ],
       "enemies": [
         ""

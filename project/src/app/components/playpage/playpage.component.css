@@ -9,11 +9,13 @@ flex-direction: column;
 align-items: center;
 
 
+
 }
 .title{
- margin: 300px 100px 100px 100px;
+ margin: 200px 100px 100px 90px;
  font-size: 3rem;
  color: #FF4081;
+ line-height: 4rem;
  text-shadow: 0 0 0.2em rgb(255, 119, 250), 0 0 0.3em rgb(241, 119, 255),0 0 0.4em rgb(255, 119, 248);
  
 }
@@ -22,4 +24,5 @@ align-items: center;
     display: flex;
     flex-direction: column;
     width: 60%;
+    padding-bottom: 10px;
 }

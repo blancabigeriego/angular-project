@@ -9,7 +9,6 @@
       src="{{ character.imageUrl }}"
       alt="{{ character.name }}"
     />
-    <mat-divider></mat-divider>
     <mat-card-content class="content">
       <p>You can <strong>find me in</strong> {{ character.films }}</p>
       <p *ngIf="character.shortFilms.length !== 0">
