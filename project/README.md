@@ -1,27 +1,73 @@
-# Project
+# A DISNEYLAND PROJECT:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+## Project Description:
+This website is a single-page-app, it has been developed with Angular and its styles with a mix of CSS and Angular Material.
+All the data of the website comes from a JSON server and we can perform all the CRUD operations.
+We have a list od Disney Characters and we can get to create new ones, delete them, and update them.
 
-## Development server
+## Wireframes:
+  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![The wireframes](src/assets/angular-pro.png)
 
-## Code scaffolding
+## Setup:
+Open the JSON server found in the services folder with comand:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ - *$ json-server --watch data.json --port 8000*
 
-## Build
+Open the console on the project folder and run the command:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ - *$ ng serve --open*
 
-## Running unit tests
+## Technologies used:
+For the layout and styling of the app I have used : 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ - HTML
+ - CSS
+ - ANGULAR MATERIAL
 
-## Running end-to-end tests
+For the functionalities of the website I have used:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ - Angular
 
-## Further help
+##    Components and Pages structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ 1. Landing: Just a welcome page.
+ 2. Home: A page where a list of all characters is rendered, if you click on them it will take you to the detail page.
+ 3. Details Page: A page with more info of each character, it has 2 buttons: go back or edit. Go back will take you to the Landing component, Edit will take you to Edit character component.
+ 4. Edit-character component: A form where you can update your chosen character info, or delete it.
+ 5. Play-page component: A form where you can create your own character.
+ 6. Nav bar: a navbar on top to make it easier to go from Home page component to the Play page component.
+
+
+## Demo:
+Landing:
+
+![Landing component](src/assets/landing.png)
+
+Home:
+![Landing component](src/assets/detail-of-home.png)
+
+Detail character page:
+![Landing component](src/assets/detail-page.png)
+
+Edit Character Page:
+![Landing component](src/assets/edit-character.png)
+
+Create new Character Page:
+![Landing component](src/assets/create-page.png)
+
+## Future work:
+In the future I would like to implement a new functionality to allow the user to choose his/hers favourite characters and render them in a "Favourite list" as it´s shown in the wireframes.
+
+## Resources:
+
+ 1. The Ironhack website.
+ 2. Stack overflow.
+ 3. Angular material documentation.
+ 4. Angular documentation.
+ 
+
+## Team members:
+Creator: Blanca Bigeriego
+Collaborators: My teachers: Raymond Maroun and Shaun Reilly.
