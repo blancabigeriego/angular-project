@@ -61,7 +61,7 @@ Create new Character Page:
 [Click to go to Trello Board](https://trello.com/b/m7CcZ0yR/angular-porject)
 
 ## Presentation slides:
-[Click to go to Presentation Slides](https://www.canva.com/design/DAFUeWHDXEc/e07b7ixThljf_WEAyZ-33Q/edit)
+[Click to go to Presentation Slides](https://www.canva.com/design/DAFUeWHDXEc/e07b7ixThljf_WEAyZ-33Q/edit?utm_content=DAFUeWHDXEc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 ## Future work:
