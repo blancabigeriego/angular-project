@@ -57,6 +57,13 @@ Edit Character Page:
 Create new Character Page:
 ![Landing component](src/assets/create-page.png)
 
+## Task management:
+[Click to go to Trello Board](https://trello.com/b/m7CcZ0yR/angular-porject)
+
+## Presentation slides:
+[Click to go to Presentation Slides](https://www.canva.com/design/DAFUeWHDXEc/e07b7ixThljf_WEAyZ-33Q/edit)
+
+
 ## Future work:
 In the future I would like to implement a new functionality to allow the user to choose his/hers favourite characters and render them in a "Favourite list" as it´s shown in the wireframes.
 
